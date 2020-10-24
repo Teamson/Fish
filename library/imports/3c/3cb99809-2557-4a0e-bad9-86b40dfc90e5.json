@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hqtl_wz_5",
+    "texture": "762b4f08-761c-4799-b986-b63a6e21d5bb",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      146,
+      42
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      146,
+      42
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sy_btn_lqtl",
+    "texture": "528c1d9c-4ff1-4ee7-8349-8b2341156ca0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      138,
+      143
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      138,
+      144
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

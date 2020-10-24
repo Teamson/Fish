@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dc-xin",
+    "texture": "419eb493-6b9a-40b5-9b08-b12b4bbec101",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      48,
+      42
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      48,
+      42
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

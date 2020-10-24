@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "mry_js5_l",
+    "texture": "07584c94-bad2-4c62-950c-91fb27fcd151",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      125,
+      99
+    ],
+    "offset": [
+      0.5,
+      0.5
+    ],
+    "originalSize": [
+      126,
+      100
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

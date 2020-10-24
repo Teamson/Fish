@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zjm_gdan2",
+    "texture": "7de8ff99-db58-48b1-8fda-25954f2a323b",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      108,
+      137
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      108,
+      138
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

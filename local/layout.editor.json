@@ -1,0 +1,118 @@
+{
+  "version": "1.1.1",
+  "windows": {
+    "main": {
+      "main": true,
+      "url": "app://editor/index.html",
+      "windowType": "dockable",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1040,
+      "layout": {
+        "children": [
+          {
+            "active": 0,
+            "children": [
+              "assets"
+            ],
+            "height": 922,
+            "type": "panel",
+            "width": 307
+          },
+          {
+            "active": 0,
+            "children": [
+              "hierarchy"
+            ],
+            "height": 922,
+            "type": "panel",
+            "width": 308
+          },
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "scene"
+                ],
+                "height": 652,
+                "type": "panel",
+                "width": 821
+              },
+              {
+                "active": 0,
+                "children": [
+                  "console",
+                  "timeline",
+                  "game-window"
+                ],
+                "height": 267,
+                "type": "panel",
+                "width": 821
+              }
+            ],
+            "height": 922,
+            "type": "dock-v",
+            "width": 821
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "cocos-services"
+            ],
+            "height": 922,
+            "type": "panel",
+            "width": 459
+          }
+        ],
+        "type": "dock-h"
+      },
+      "panels": [
+        "assets",
+        "hierarchy",
+        "scene",
+        "console",
+        "timeline",
+        "game-window",
+        "inspector",
+        "cocos-services"
+      ]
+    }
+  },
+  "panels": {
+    "project-settings": {
+      "x": 652,
+      "y": 0,
+      "width": 600,
+      "height": 1047
+    },
+    "builder": {
+      "x": 702,
+      "y": 140,
+      "width": 516,
+      "height": 739
+    },
+    "sprite-editor": {
+      "x": 702,
+      "y": 240,
+      "width": 516,
+      "height": 539
+    },
+    "package-asset.import": {
+      "x": 702,
+      "y": 235,
+      "width": 520,
+      "height": 575
+    }
+  },
+  "panelLabelWidth": {
+    "inspector": null,
+    "project-settings": null,
+    "builder": null
+  },
+  "panelLabelWidth.inspector": null,
+  "panelLabelWidth.project-settings": null,
+  "panelLabelWidth.builder": null
+}

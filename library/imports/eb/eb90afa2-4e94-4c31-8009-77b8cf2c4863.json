@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tsy_btn_xyb2",
+    "texture": "2a513780-cd18-470a-9b5a-371a5c1aa3a2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      274,
+      114
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      274,
+      114
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

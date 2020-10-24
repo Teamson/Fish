@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sy_btn_dc2",
+    "texture": "2bf9f27f-b193-44f3-b121-870e7d57f578",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      84,
+      84
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      84,
+      84
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

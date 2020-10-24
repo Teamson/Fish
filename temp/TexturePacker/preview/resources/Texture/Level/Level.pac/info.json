@@ -1,0 +1,801 @@
+{
+  "projectPath": "E:\\cocosPro2d\\Fish",
+  "mtimes": {
+    "3892ed7a-2ca2-4e1d-8804-9e86d09e7852": {
+      "assetMtime": 1603077306033,
+      "metaMtime": 1603077309939
+    },
+    "0090e893-e9b8-4774-9800-8decf0f7d582": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298344
+    },
+    "bafd75d7-1d17-49e0-9bfe-6a1b110eb6f3": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298344
+    },
+    "0b0a96fd-3cbb-4f22-9e40-10faf0ba1a1e": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298241
+    },
+    "a8921ac4-331b-47c2-bbcc-c4f4abb26f7f": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298241
+    },
+    "14aeabdd-64e9-4882-91a9-1b61cef6a8b7": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298243
+    },
+    "81dd21e9-91df-43ac-bffc-574db669f9ff": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298243
+    },
+    "15b4cea7-2410-41ff-b091-dc4574ab36bf": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298305
+    },
+    "0e1bc998-dbeb-4919-8e28-cddda691d9d8": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298305
+    },
+    "1c1f10db-2d08-4cc5-b3e2-285b506f5ef1": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298368
+    },
+    "a15b9cd2-ace9-4b57-8979-14bdac1eea24": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298368
+    },
+    "20cba252-e93e-489f-8a71-4a148936d948": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298226
+    },
+    "f7ba2f38-5483-4391-b9e3-0bd6f1fbd120": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298226
+    },
+    "30af866f-a8ef-4d77-bbfd-8171d7eedf06": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298229
+    },
+    "51168fa3-0901-4b26-8592-1ef1b117aac5": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298229
+    },
+    "37c36dd7-b8b5-4191-85fc-a74552a1d7de": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298316
+    },
+    "bf223d48-861e-4967-9a8b-e17e348953dc": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298316
+    },
+    "3f8df322-7353-437e-99e9-93c8ebd27e35": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298275
+    },
+    "bda3b8f1-9b5d-4cda-9894-fb90161b64fe": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298275
+    },
+    "61d327bf-9e9d-4758-95c0-72e2f026933b": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298335
+    },
+    "c5e50d67-853f-4e77-9bbb-691bbdd9faf4": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298335
+    },
+    "98d5f675-5921-4945-ac47-f20c6927ea84": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298357
+    },
+    "545bf8bc-c83e-4ada-b425-2bf621d9f63f": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298357
+    },
+    "a1b44474-d8f9-4f99-b5b6-ee5abc718ada": {
+      "assetMtime": 1603077298201,
+      "metaMtime": 1603077298372
+    },
+    "02d42ed5-5cae-4fd0-b142-91a4721d267c": {
+      "assetMtime": 1603077298201,
+      "metaMtime": 1603077298372
+    },
+    "b9447535-9798-454e-a84f-860b9de9112d": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298322
+    },
+    "0a3ebf8f-0c09-4fab-819f-12590edb33e3": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298322
+    },
+    "bc1bc693-a16e-4739-a2d6-b0a2cb1f88ec": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298258
+    },
+    "e6d50f2e-e84e-434c-afed-6ccda4dc76f9": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298258
+    },
+    "c0bf0bc4-fb5c-4eb1-be9f-2d11ac514271": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298351
+    },
+    "e42173f2-ef2c-4208-aba0-23b650d0a3c0": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298351
+    },
+    "c1c3a13a-61ea-4161-9f29-14287b885490": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298273
+    },
+    "50925adf-24c4-4965-8513-628fb00920c8": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298273
+    },
+    "c4e64e86-139a-44dc-ba1e-0d5a3f7b7d77": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298287
+    },
+    "28f879c2-6779-4297-a3ec-d5b5cb4bf5cb": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298287
+    },
+    "da2b1a05-80ab-435b-a5bb-30ace0d0ea34": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298288
+    },
+    "b58e20d7-66e8-480e-a4c8-ca0db21fab2e": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298288
+    },
+    "de79782b-2926-47f7-b67a-25a19c99caf3": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298330
+    },
+    "9210d733-2909-435b-86ac-d2eecaceaeb4": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298330
+    },
+    "e87d6fc8-061e-4e29-838f-f9f2d7f06f19": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298257
+    },
+    "db46dfc3-e293-412c-82cf-d38c4ad234a9": {
+      "assetMtime": 1603077298199,
+      "metaMtime": 1603077298257
+    },
+    "f9886244-412f-400d-9216-c0d7eac4e6a8": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298299
+    },
+    "6c4f4764-7943-40ad-82b1-331ac0d879d0": {
+      "assetMtime": 1603077298200,
+      "metaMtime": 1603077298299
+    }
+  },
+  "result": {
+    "name": "Level-16",
+    "width": 756,
+    "height": 536,
+    "ver": "1.2.0",
+    "uuid": "3892ed7a-2ca2-4e1d-8804-9e86d09e7852",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": false,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "yxz_gq_13_1",
+            "uuid": "f9886244-412f-400d-9216-c0d7eac4e6a8",
+            "textureUuid": "6c4f4764-7943-40ad-82b1-331ac0d879d0",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_20.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 742,
+              "height": 456,
+              "rotatedWidth": 742,
+              "rotatedHeight": 456
+            },
+            "rawWidth": 750,
+            "rawHeight": 456,
+            "width": 748,
+            "height": 462,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/6c/6c4f4764-7943-40ad-82b1-331ac0d879d0.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 748,
+            "rotatedHeight": 462
+          },
+          {
+            "name": "yxz_gq_12_3",
+            "uuid": "da2b1a05-80ab-435b-a5bb-30ace0d0ea34",
+            "textureUuid": "b58e20d7-66e8-480e-a4c8-ca0db21fab2e",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_17.png",
+            "trim": {
+              "x": 3,
+              "y": 465,
+              "width": 717,
+              "height": 528,
+              "rotatedWidth": 717,
+              "rotatedHeight": 528
+            },
+            "rawWidth": 750,
+            "rawHeight": 528,
+            "width": 723,
+            "height": 534,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/b5/b58e20d7-66e8-480e-a4c8-ca0db21fab2e.png",
+            "x": 0,
+            "y": 462,
+            "rotatedWidth": 723,
+            "rotatedHeight": 534
+          }
+        ],
+        "width": 748,
+        "height": 996,
+        "name": "Level-1",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-1.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_13_2",
+            "uuid": "15b4cea7-2410-41ff-b091-dc4574ab36bf",
+            "textureUuid": "0e1bc998-dbeb-4919-8e28-cddda691d9d8",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_3.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 725,
+              "height": 884,
+              "rotatedWidth": 725,
+              "rotatedHeight": 884
+            },
+            "rawWidth": 750,
+            "rawHeight": 884,
+            "width": 731,
+            "height": 890,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/0e/0e1bc998-dbeb-4919-8e28-cddda691d9d8.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 731,
+            "rotatedHeight": 890
+          }
+        ],
+        "width": 731,
+        "height": 890,
+        "name": "Level-2",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-2.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_7",
+            "uuid": "3f8df322-7353-437e-99e9-93c8ebd27e35",
+            "textureUuid": "bda3b8f1-9b5d-4cda-9894-fb90161b64fe",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_8.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 724,
+              "height": 878,
+              "rotatedWidth": 724,
+              "rotatedHeight": 878
+            },
+            "rawWidth": 724,
+            "rawHeight": 878,
+            "width": 730,
+            "height": 884,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/bd/bda3b8f1-9b5d-4cda-9894-fb90161b64fe.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 730,
+            "rotatedHeight": 884
+          }
+        ],
+        "width": 730,
+        "height": 884,
+        "name": "Level-3",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-3.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_1",
+            "uuid": "30af866f-a8ef-4d77-bbfd-8171d7eedf06",
+            "textureUuid": "51168fa3-0901-4b26-8592-1ef1b117aac5",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_6.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 680,
+              "height": 914,
+              "rotatedWidth": 680,
+              "rotatedHeight": 914
+            },
+            "rawWidth": 680,
+            "rawHeight": 914,
+            "width": 686,
+            "height": 920,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/51/51168fa3-0901-4b26-8592-1ef1b117aac5.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 686,
+            "rotatedHeight": 920
+          }
+        ],
+        "width": 686,
+        "height": 920,
+        "name": "Level-4",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-4.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_20_1",
+            "uuid": "1c1f10db-2d08-4cc5-b3e2-285b506f5ef1",
+            "textureUuid": "a15b9cd2-ace9-4b57-8979-14bdac1eea24",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_4.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 769,
+              "height": 795,
+              "rotatedWidth": 769,
+              "rotatedHeight": 795
+            },
+            "rawWidth": 770,
+            "rawHeight": 796,
+            "width": 775,
+            "height": 801,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/a1/a15b9cd2-ace9-4b57-8979-14bdac1eea24.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 775,
+            "rotatedHeight": 801
+          }
+        ],
+        "width": 775,
+        "height": 801,
+        "name": "Level-5",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-5.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_8",
+            "uuid": "e87d6fc8-061e-4e29-838f-f9f2d7f06f19",
+            "textureUuid": "db46dfc3-e293-412c-82cf-d38c4ad234a9",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_19.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 662,
+              "height": 914,
+              "rotatedWidth": 662,
+              "rotatedHeight": 914
+            },
+            "rawWidth": 662,
+            "rawHeight": 914,
+            "width": 668,
+            "height": 920,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/db/db46dfc3-e293-412c-82cf-d38c4ad234a9.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 668,
+            "rotatedHeight": 920
+          }
+        ],
+        "width": 668,
+        "height": 920,
+        "name": "Level-6",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-6.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_15",
+            "uuid": "de79782b-2926-47f7-b67a-25a19c99caf3",
+            "textureUuid": "9210d733-2909-435b-86ac-d2eecaceaeb4",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_18.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 660,
+              "height": 868,
+              "rotatedWidth": 660,
+              "rotatedHeight": 868
+            },
+            "rawWidth": 660,
+            "rawHeight": 868,
+            "width": 666,
+            "height": 874,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/92/9210d733-2909-435b-86ac-d2eecaceaeb4.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 666,
+            "rotatedHeight": 874
+          }
+        ],
+        "width": 666,
+        "height": 874,
+        "name": "Level-7",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-7.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_12_1",
+            "uuid": "c1c3a13a-61ea-4161-9f29-14287b885490",
+            "textureUuid": "50925adf-24c4-4965-8513-628fb00920c8",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_15.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 746,
+              "height": 766,
+              "rotatedWidth": 746,
+              "rotatedHeight": 766
+            },
+            "rawWidth": 750,
+            "rawHeight": 766,
+            "width": 752,
+            "height": 772,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/50/50925adf-24c4-4965-8513-628fb00920c8.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 752,
+            "rotatedHeight": 772
+          }
+        ],
+        "width": 752,
+        "height": 772,
+        "name": "Level-8",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-8.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_9",
+            "uuid": "0b0a96fd-3cbb-4f22-9e40-10faf0ba1a1e",
+            "textureUuid": "a8921ac4-331b-47c2-bbcc-c4f4abb26f7f",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311675_image_1.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 603,
+              "height": 917,
+              "rotatedWidth": 603,
+              "rotatedHeight": 917
+            },
+            "rawWidth": 604,
+            "rawHeight": 918,
+            "width": 609,
+            "height": 923,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/a8/a8921ac4-331b-47c2-bbcc-c4f4abb26f7f.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 609,
+            "rotatedHeight": 923
+          }
+        ],
+        "width": 609,
+        "height": 923,
+        "name": "Level-9",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-9.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_10_1",
+            "uuid": "14aeabdd-64e9-4882-91a9-1b61cef6a8b7",
+            "textureUuid": "81dd21e9-91df-43ac-bffc-574db669f9ff",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311675_image_2.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 797,
+              "height": 648,
+              "rotatedWidth": 797,
+              "rotatedHeight": 648
+            },
+            "rawWidth": 798,
+            "rawHeight": 648,
+            "width": 803,
+            "height": 654,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/81/81dd21e9-91df-43ac-bffc-574db669f9ff.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 803,
+            "rotatedHeight": 654
+          }
+        ],
+        "width": 803,
+        "height": 654,
+        "name": "Level-10",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-10.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_17",
+            "uuid": "61d327bf-9e9d-4758-95c0-72e2f026933b",
+            "textureUuid": "c5e50d67-853f-4e77-9bbb-691bbdd9faf4",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_9.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 664,
+              "height": 768,
+              "rotatedWidth": 664,
+              "rotatedHeight": 768
+            },
+            "rawWidth": 664,
+            "rawHeight": 768,
+            "width": 670,
+            "height": 774,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/c5/c5e50d67-853f-4e77-9bbb-691bbdd9faf4.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 670,
+            "rotatedHeight": 774
+          }
+        ],
+        "width": 670,
+        "height": 774,
+        "name": "Level-11",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-11.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_11",
+            "uuid": "bc1bc693-a16e-4739-a2d6-b0a2cb1f88ec",
+            "textureUuid": "e6d50f2e-e84e-434c-afed-6ccda4dc76f9",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_13.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 638,
+              "height": 781,
+              "rotatedWidth": 638,
+              "rotatedHeight": 781
+            },
+            "rawWidth": 638,
+            "rawHeight": 782,
+            "width": 644,
+            "height": 787,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/e6/e6d50f2e-e84e-434c-afed-6ccda4dc76f9.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 644,
+            "rotatedHeight": 787
+          }
+        ],
+        "width": 644,
+        "height": 787,
+        "name": "Level-12",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-12.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_19_1",
+            "uuid": "98d5f675-5921-4945-ac47-f20c6927ea84",
+            "textureUuid": "545bf8bc-c83e-4ada-b425-2bf621d9f63f",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_10.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 749,
+              "height": 654,
+              "rotatedWidth": 749,
+              "rotatedHeight": 654
+            },
+            "rawWidth": 750,
+            "rawHeight": 654,
+            "width": 755,
+            "height": 660,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/54/545bf8bc-c83e-4ada-b425-2bf621d9f63f.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 755,
+            "rotatedHeight": 660
+          }
+        ],
+        "width": 755,
+        "height": 660,
+        "name": "Level-13",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-13.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_19_2",
+            "uuid": "0090e893-e9b8-4774-9800-8decf0f7d582",
+            "textureUuid": "bafd75d7-1d17-49e0-9bfe-6a1b110eb6f3",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311675_image_0.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 713,
+              "height": 654,
+              "rotatedWidth": 713,
+              "rotatedHeight": 654
+            },
+            "rawWidth": 750,
+            "rawHeight": 654,
+            "width": 719,
+            "height": 660,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/ba/bafd75d7-1d17-49e0-9bfe-6a1b110eb6f3.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 719,
+            "rotatedHeight": 660
+          }
+        ],
+        "width": 719,
+        "height": 660,
+        "name": "Level-14",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-14.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_2",
+            "uuid": "20cba252-e93e-489f-8a71-4a148936d948",
+            "textureUuid": "f7ba2f38-5483-4391-b9e3-0bd6f1fbd120",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_5.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 578,
+              "height": 788,
+              "rotatedWidth": 578,
+              "rotatedHeight": 788
+            },
+            "rawWidth": 578,
+            "rawHeight": 788,
+            "width": 584,
+            "height": 794,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/f7/f7ba2f38-5483-4391-b9e3-0bd6f1fbd120.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 584,
+            "rotatedHeight": 794
+          }
+        ],
+        "width": 584,
+        "height": 794,
+        "name": "Level-15",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-15.png"
+      },
+      {
+        "files": [
+          {
+            "name": "yxz_gq_12_2",
+            "uuid": "c4e64e86-139a-44dc-ba1e-0d5a3f7b7d77",
+            "textureUuid": "28f879c2-6779-4297-a3ec-d5b5cb4bf5cb",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_16.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 750,
+              "height": 530,
+              "rotatedWidth": 750,
+              "rotatedHeight": 530
+            },
+            "rawWidth": 750,
+            "rawHeight": 530,
+            "width": 756,
+            "height": 536,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/28/28f879c2-6779-4297-a3ec-d5b5cb4bf5cb.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 756,
+            "rotatedHeight": 536
+          }
+        ],
+        "width": 756,
+        "height": 536,
+        "name": "Level-16",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\resources\\Texture\\Level\\Level.pac\\Level-16.png"
+      }
+    ],
+    "unpackedTextures": [
+      {
+        "name": "yxz_gq_14",
+        "uuid": "37c36dd7-b8b5-4191-85fc-a74552a1d7de",
+        "textureUuid": "bf223d48-861e-4967-9a8b-e17e348953dc",
+        "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_7.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 689,
+          "height": 1077,
+          "rotatedWidth": 689,
+          "rotatedHeight": 1077
+        },
+        "rawWidth": 690,
+        "rawHeight": 1078,
+        "width": 695,
+        "height": 1083,
+        "originalPath": "E:/cocosPro2d/Fish/library/imports/bf/bf223d48-861e-4967-9a8b-e17e348953dc.png"
+      },
+      {
+        "name": "yxz_gq_6",
+        "uuid": "a1b44474-d8f9-4f99-b5b6-ee5abc718ada",
+        "textureUuid": "02d42ed5-5cae-4fd0-b142-91a4721d267c",
+        "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_11.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 655,
+          "height": 1021,
+          "rotatedWidth": 655,
+          "rotatedHeight": 1021
+        },
+        "rawWidth": 656,
+        "rawHeight": 1022,
+        "width": 661,
+        "height": 1027,
+        "originalPath": "E:/cocosPro2d/Fish/library/imports/02/02d42ed5-5cae-4fd0-b142-91a4721d267c.png"
+      },
+      {
+        "name": "yxz_gq_16",
+        "uuid": "b9447535-9798-454e-a84f-860b9de9112d",
+        "textureUuid": "0a3ebf8f-0c09-4fab-819f-12590edb33e3",
+        "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311676_image_12.png",
+        "trim": {
+          "x": 5,
+          "y": 0,
+          "width": 689,
+          "height": 1077,
+          "rotatedWidth": 689,
+          "rotatedHeight": 1077
+        },
+        "rawWidth": 700,
+        "rawHeight": 1078,
+        "width": 695,
+        "height": 1083,
+        "originalPath": "E:/cocosPro2d/Fish/library/imports/0a/0a3ebf8f-0c09-4fab-819f-12590edb33e3.png"
+      },
+      {
+        "name": "yxz_gq_18",
+        "uuid": "c0bf0bc4-fb5c-4eb1-be9f-2d11ac514271",
+        "textureUuid": "e42173f2-ef2c-4208-aba0-23b650d0a3c0",
+        "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603077311677_image_14.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 665,
+          "height": 1021,
+          "rotatedWidth": 665,
+          "rotatedHeight": 1021
+        },
+        "rawWidth": 666,
+        "rawHeight": 1022,
+        "width": 671,
+        "height": 1027,
+        "originalPath": "E:/cocosPro2d/Fish/library/imports/e4/e42173f2-ef2c-4208-aba0-23b650d0a3c0.png"
+      }
+    ]
+  }
+}

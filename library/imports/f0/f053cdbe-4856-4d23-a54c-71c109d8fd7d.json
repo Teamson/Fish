@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tsy_btn_mfhq",
+    "texture": "dbabc6fc-efa3-4d3e-9752-bbb741a2b3c5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      274,
+      158
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      274,
+      158
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "projectPath": "E:\\cocosPro2d\\Fish",
+  "mtimes": {
+    "0922a77e-449d-4a65-8e75-5ba021124a36": {
+      "assetMtime": 1603076942191,
+      "metaMtime": 1603076947451
+    },
+    "1a68ae49-ba44-41a1-9b8a-2066cf174f16": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937872
+    },
+    "a4d9ade4-b724-431d-97b5-b23402fc1dfb": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937872
+    },
+    "3cb93b09-ffb2-4c6a-9ba7-cb7628b64fac": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937863
+    },
+    "d71b8755-d276-4dcc-9b52-57ccc3a31ecd": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937863
+    },
+    "3fcec375-2294-4a13-ad2c-c560d4b71c84": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937873
+    },
+    "f972b57f-6931-4b4c-bc68-cfc732e63237": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937873
+    },
+    "4370c855-457d-436f-b5ae-0e8b8380aa1f": {
+      "assetMtime": 1603076937825,
+      "metaMtime": 1603076937848
+    },
+    "6bcd4d9b-8207-4bfe-ad05-26c49a759600": {
+      "assetMtime": 1603076937825,
+      "metaMtime": 1603076937848
+    },
+    "53f30716-e617-416e-b366-54fcc59d02df": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937896
+    },
+    "d969f88d-e9b6-490c-984f-58dc525a6fb1": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937896
+    },
+    "5e811a58-925f-4b80-bca5-9165381c5575": {
+      "assetMtime": 1603076937827,
+      "metaMtime": 1603076937898
+    },
+    "305eb6c1-5f83-42cc-a24e-db84117305dc": {
+      "assetMtime": 1603076937827,
+      "metaMtime": 1603076937898
+    },
+    "616fb7db-f0cf-42c6-ac29-1d81714fc438": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937855
+    },
+    "cc63bc3a-c4b2-4fb4-8144-e29a87e873cf": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937855
+    },
+    "6b8a2fd4-3fd5-40e0-a6cd-7a7295ba2ef0": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937868
+    },
+    "dd2f3dda-1809-439c-8cce-cc9335c2705b": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937868
+    },
+    "867d24e2-7018-4d06-8717-89b17c1b5e11": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937862
+    },
+    "269436bb-ae67-405f-81dc-196fdde06216": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937862
+    },
+    "9cee3573-3054-4ea5-9463-8b7200118fc3": {
+      "assetMtime": 1603076937825,
+      "metaMtime": 1603076937856
+    },
+    "9af3a8e0-0bce-457b-9f97-e97e82b47f5d": {
+      "assetMtime": 1603076937825,
+      "metaMtime": 1603076937856
+    },
+    "b72c2e6f-9164-47db-b7f6-1ecb4cbce044": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937885
+    },
+    "f33a33e5-30a7-4192-a007-f49d7ba1dabd": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937885
+    },
+    "bfb33f83-d632-48ae-8209-a8d2b2d19b0b": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937884
+    },
+    "82d26426-4d03-482c-a59b-9dac4e613a17": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937884
+    },
+    "c02ed8f7-6cc8-4b4f-9f34-686e004feb5b": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937878
+    },
+    "d11b3579-e97f-4d7d-a26e-26116df2f53a": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937878
+    },
+    "dc1b8e79-6f28-4a40-a66e-5ec673759f49": {
+      "assetMtime": 1603076937825,
+      "metaMtime": 1603076937848
+    },
+    "e63a490a-f6c5-48c9-a93a-dd171754f6b5": {
+      "assetMtime": 1603076937825,
+      "metaMtime": 1603076937848
+    },
+    "e053101f-c81e-4be5-943a-5f0b13f573af": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937878
+    },
+    "797ff5e5-85ac-4e03-95da-fbc741fc03be": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937878
+    },
+    "f628dca8-b96e-453d-ab30-bc24245f18e1": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937867
+    },
+    "60cad3dc-ee7d-4698-967b-c9bb17ef4fe0": {
+      "assetMtime": 1603076937826,
+      "metaMtime": 1603076937867
+    }
+  },
+  "result": {
+    "name": "GetFishUI",
+    "width": 1024,
+    "height": 1024,
+    "ver": "1.2.0",
+    "uuid": "0922a77e-449d-4a65-8e75-5ba021124a36",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": false,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "hdmry_dk",
+            "uuid": "53f30716-e617-416e-b366-54fcc59d02df",
+            "textureUuid": "d969f88d-e9b6-490c-984f-58dc525a6fb1",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949017_image_4.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 490,
+              "height": 636,
+              "rotatedWidth": 636,
+              "rotatedHeight": 490
+            },
+            "rawWidth": 490,
+            "rawHeight": 636,
+            "width": 496,
+            "height": 642,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/d9/d969f88d-e9b6-490c-984f-58dc525a6fb1.png",
+            "x": 0,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 642,
+            "rotatedHeight": 496
+          },
+          {
+            "name": "hdmry_sx",
+            "uuid": "5e811a58-925f-4b80-bca5-9165381c5575",
+            "textureUuid": "305eb6c1-5f83-42cc-a24e-db84117305dc",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_5.png",
+            "trim": {
+              "x": 3,
+              "y": 499,
+              "width": 520,
+              "height": 520,
+              "rotatedWidth": 520,
+              "rotatedHeight": 520
+            },
+            "rawWidth": 520,
+            "rawHeight": 520,
+            "width": 526,
+            "height": 526,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/30/305eb6c1-5f83-42cc-a24e-db84117305dc.png",
+            "x": 0,
+            "y": 496,
+            "rotatedWidth": 526,
+            "rotatedHeight": 526
+          },
+          {
+            "name": "hdmry_cd",
+            "uuid": "9cee3573-3054-4ea5-9463-8b7200118fc3",
+            "textureUuid": "9af3a8e0-0bce-457b-9f97-e97e82b47f5d",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_9.png",
+            "trim": {
+              "x": 529,
+              "y": 499,
+              "width": 499,
+              "height": 94,
+              "rotatedWidth": 94,
+              "rotatedHeight": 499
+            },
+            "rawWidth": 500,
+            "rawHeight": 94,
+            "width": 505,
+            "height": 100,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/9a/9af3a8e0-0bce-457b-9f97-e97e82b47f5d.png",
+            "x": 526,
+            "y": 496,
+            "rotated": true,
+            "rotatedWidth": 100,
+            "rotatedHeight": 505
+          },
+          {
+            "name": "hdmry_btn_qd",
+            "uuid": "b72c2e6f-9164-47db-b7f6-1ecb4cbce044",
+            "textureUuid": "f33a33e5-30a7-4192-a007-f49d7ba1dabd",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_10.png",
+            "trim": {
+              "x": 629,
+              "y": 499,
+              "width": 314,
+              "height": 114,
+              "rotatedWidth": 114,
+              "rotatedHeight": 314
+            },
+            "rawWidth": 314,
+            "rawHeight": 114,
+            "width": 320,
+            "height": 120,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/f3/f33a33e5-30a7-4192-a007-f49d7ba1dabd.png",
+            "x": 626,
+            "y": 496,
+            "rotated": true,
+            "rotatedWidth": 120,
+            "rotatedHeight": 320
+          },
+          {
+            "name": "hdmry_btn_gb",
+            "uuid": "dc1b8e79-6f28-4a40-a66e-5ec673759f49",
+            "textureUuid": "e63a490a-f6c5-48c9-a93a-dd171754f6b5",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949019_image_13.png",
+            "trim": {
+              "x": 629,
+              "y": 819,
+              "width": 78,
+              "height": 78,
+              "rotatedWidth": 78,
+              "rotatedHeight": 78
+            },
+            "rawWidth": 78,
+            "rawHeight": 78,
+            "width": 84,
+            "height": 84,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/e6/e63a490a-f6c5-48c9-a93a-dd171754f6b5.png",
+            "x": 626,
+            "y": 816,
+            "rotatedWidth": 84,
+            "rotatedHeight": 84
+          },
+          {
+            "name": "hdmry_zt1",
+            "uuid": "3fcec375-2294-4a13-ad2c-c560d4b71c84",
+            "textureUuid": "f972b57f-6931-4b4c-bc68-cfc732e63237",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949017_image_2.png",
+            "trim": {
+              "x": 629,
+              "y": 903,
+              "width": 175,
+              "height": 30,
+              "rotatedWidth": 175,
+              "rotatedHeight": 30
+            },
+            "rawWidth": 176,
+            "rawHeight": 30,
+            "width": 181,
+            "height": 36,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/f9/f972b57f-6931-4b4c-bc68-cfc732e63237.png",
+            "x": 626,
+            "y": 900,
+            "rotatedWidth": 181,
+            "rotatedHeight": 36
+          },
+          {
+            "name": "hdmry_yq3",
+            "uuid": "6b8a2fd4-3fd5-40e0-a6cd-7a7295ba2ef0",
+            "textureUuid": "dd2f3dda-1809-439c-8cce-cc9335c2705b",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_7.png",
+            "trim": {
+              "x": 713,
+              "y": 819,
+              "width": 32,
+              "height": 38,
+              "rotatedWidth": 32,
+              "rotatedHeight": 38
+            },
+            "rawWidth": 32,
+            "rawHeight": 38,
+            "width": 38,
+            "height": 44,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/dd/dd2f3dda-1809-439c-8cce-cc9335c2705b.png",
+            "x": 710,
+            "y": 816,
+            "rotatedWidth": 38,
+            "rotatedHeight": 44
+          },
+          {
+            "name": "hdmry_yq2",
+            "uuid": "3cb93b09-ffb2-4c6a-9ba7-cb7628b64fac",
+            "textureUuid": "d71b8755-d276-4dcc-9b52-57ccc3a31ecd",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949017_image_1.png",
+            "trim": {
+              "x": 713,
+              "y": 863,
+              "width": 30,
+              "height": 30,
+              "rotatedWidth": 30,
+              "rotatedHeight": 30
+            },
+            "rawWidth": 30,
+            "rawHeight": 30,
+            "width": 36,
+            "height": 36,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/d7/d71b8755-d276-4dcc-9b52-57ccc3a31ecd.png",
+            "x": 710,
+            "y": 860,
+            "rotatedWidth": 36,
+            "rotatedHeight": 36
+          },
+          {
+            "name": "hdmry_yq1",
+            "uuid": "f628dca8-b96e-453d-ab30-bc24245f18e1",
+            "textureUuid": "60cad3dc-ee7d-4698-967b-c9bb17ef4fe0",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949019_image_15.png",
+            "trim": {
+              "x": 749,
+              "y": 863,
+              "width": 30,
+              "height": 30,
+              "rotatedWidth": 30,
+              "rotatedHeight": 30
+            },
+            "rawWidth": 30,
+            "rawHeight": 30,
+            "width": 36,
+            "height": 36,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/60/60cad3dc-ee7d-4698-967b-c9bb17ef4fe0.png",
+            "x": 746,
+            "y": 860,
+            "rotatedWidth": 36,
+            "rotatedHeight": 36
+          },
+          {
+            "name": "hdmry_dk1",
+            "uuid": "4370c855-457d-436f-b5ae-0e8b8380aa1f",
+            "textureUuid": "6bcd4d9b-8207-4bfe-ad05-26c49a759600",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949017_image_3.png",
+            "trim": {
+              "x": 810,
+              "y": 3,
+              "width": 408,
+              "height": 80,
+              "rotatedWidth": 80,
+              "rotatedHeight": 408
+            },
+            "rawWidth": 408,
+            "rawHeight": 80,
+            "width": 414,
+            "height": 86,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/6b/6bcd4d9b-8207-4bfe-ad05-26c49a759600.png",
+            "x": 807,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 86,
+            "rotatedHeight": 414
+          },
+          {
+            "name": "hdmry_zt5",
+            "uuid": "bfb33f83-d632-48ae-8209-a8d2b2d19b0b",
+            "textureUuid": "82d26426-4d03-482c-a59b-9dac4e613a17",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_11.png",
+            "trim": {
+              "x": 896,
+              "y": 3,
+              "width": 362,
+              "height": 31,
+              "rotatedWidth": 31,
+              "rotatedHeight": 362
+            },
+            "rawWidth": 362,
+            "rawHeight": 32,
+            "width": 368,
+            "height": 37,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/82/82d26426-4d03-482c-a59b-9dac4e613a17.png",
+            "x": 893,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 37,
+            "rotatedHeight": 368
+          },
+          {
+            "name": "hdmry_zt4",
+            "uuid": "c02ed8f7-6cc8-4b4f-9f34-686e004feb5b",
+            "textureUuid": "d11b3579-e97f-4d7d-a26e-26116df2f53a",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_12.png",
+            "trim": {
+              "x": 896,
+              "y": 371,
+              "width": 362,
+              "height": 31,
+              "rotatedWidth": 31,
+              "rotatedHeight": 362
+            },
+            "rawWidth": 362,
+            "rawHeight": 32,
+            "width": 368,
+            "height": 37,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/d1/d11b3579-e97f-4d7d-a26e-26116df2f53a.png",
+            "x": 893,
+            "y": 368,
+            "rotated": true,
+            "rotatedWidth": 37,
+            "rotatedHeight": 368
+          },
+          {
+            "name": "hdmry_dk2",
+            "uuid": "616fb7db-f0cf-42c6-ac29-1d81714fc438",
+            "textureUuid": "cc63bc3a-c4b2-4fb4-8144-e29a87e873cf",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_6.png",
+            "trim": {
+              "x": 810,
+              "y": 417,
+              "width": 408,
+              "height": 80,
+              "rotatedWidth": 80,
+              "rotatedHeight": 408
+            },
+            "rawWidth": 408,
+            "rawHeight": 80,
+            "width": 414,
+            "height": 86,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/cc/cc63bc3a-c4b2-4fb4-8144-e29a87e873cf.png",
+            "x": 807,
+            "y": 414,
+            "rotated": true,
+            "rotatedWidth": 86,
+            "rotatedHeight": 414
+          },
+          {
+            "name": "hdmry_zt3",
+            "uuid": "1a68ae49-ba44-41a1-9b8a-2066cf174f16",
+            "textureUuid": "a4d9ade4-b724-431d-97b5-b23402fc1dfb",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949017_image_0.png",
+            "trim": {
+              "x": 749,
+              "y": 3,
+              "width": 354,
+              "height": 31,
+              "rotatedWidth": 31,
+              "rotatedHeight": 354
+            },
+            "rawWidth": 362,
+            "rawHeight": 32,
+            "width": 360,
+            "height": 37,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/a4/a4d9ade4-b724-431d-97b5-b23402fc1dfb.png",
+            "x": 746,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 37,
+            "rotatedHeight": 360
+          },
+          {
+            "name": "hdmry_zt2",
+            "uuid": "e053101f-c81e-4be5-943a-5f0b13f573af",
+            "textureUuid": "797ff5e5-85ac-4e03-95da-fbc741fc03be",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949019_image_14.png",
+            "trim": {
+              "x": 749,
+              "y": 363,
+              "width": 354,
+              "height": 31,
+              "rotatedWidth": 31,
+              "rotatedHeight": 354
+            },
+            "rawWidth": 362,
+            "rawHeight": 32,
+            "width": 360,
+            "height": 37,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/79/797ff5e5-85ac-4e03-95da-fbc741fc03be.png",
+            "x": 746,
+            "y": 360,
+            "rotated": true,
+            "rotatedWidth": 37,
+            "rotatedHeight": 360
+          },
+          {
+            "name": "hdmry_dk3",
+            "uuid": "867d24e2-7018-4d06-8717-89b17c1b5e11",
+            "textureUuid": "269436bb-ae67-405f-81dc-196fdde06216",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603076949018_image_8.png",
+            "trim": {
+              "x": 645,
+              "y": 3,
+              "width": 408,
+              "height": 80,
+              "rotatedWidth": 80,
+              "rotatedHeight": 408
+            },
+            "rawWidth": 408,
+            "rawHeight": 80,
+            "width": 414,
+            "height": 86,
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/26/269436bb-ae67-405f-81dc-196fdde06216.png",
+            "x": 642,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 86,
+            "rotatedHeight": 414
+          }
+        ],
+        "width": 930,
+        "height": 1022,
+        "name": "GetFishUI-1",
+        "imagePath": "E:\\cocosPro2d\\Fish\\temp\\TexturePacker\\preview\\Res\\Texture\\GetFishUI\\GetFishUI.pac\\GetFishUI-1.png"
+      }
+    ],
+    "unpackedTextures": []
+  }
+}

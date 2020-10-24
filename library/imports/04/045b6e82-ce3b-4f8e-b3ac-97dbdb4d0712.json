@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dc_wxd",
+    "texture": "c05c7529-6df4-4f26-b57e-962e1fb0386f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      720,
+      124
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      720,
+      124
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

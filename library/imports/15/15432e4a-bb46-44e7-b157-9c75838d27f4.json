@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxn_mfts",
+    "texture": "84ba43c6-f405-4a49-ab03-5fc9128f562f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      117,
+      167
+    ],
+    "offset": [
+      -0.5,
+      0.5
+    ],
+    "originalSize": [
+      118,
+      168
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

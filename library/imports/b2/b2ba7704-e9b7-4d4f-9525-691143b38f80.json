@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hqtl_tb_fx",
+    "texture": "f48031d6-481f-4ef8-87e0-9542170e6734",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      32,
+      33
+    ],
+    "offset": [
+      -2,
+      0
+    ],
+    "originalSize": [
+      36,
+      33
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "hdmry_zt1",
+    "texture": "f972b57f-6931-4b4c-bc68-cfc732e63237",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      175,
+      30
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      176,
+      30
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
