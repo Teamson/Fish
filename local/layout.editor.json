@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 0,
-      "width": 1920,
-      "height": 1040,
+      "x": -8,
+      "y": -8,
+      "width": 1936,
+      "height": 1056,
       "layout": {
         "children": [
           {
@@ -16,7 +16,7 @@
             "children": [
               "assets"
             ],
-            "height": 922,
+            "height": 919.5,
             "type": "panel",
             "width": 307
           },
@@ -25,7 +25,7 @@
             "children": [
               "hierarchy"
             ],
-            "height": 922,
+            "height": 919.5,
             "type": "panel",
             "width": 308
           },
@@ -36,7 +36,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 652,
+                "height": 650.21875,
                 "type": "panel",
                 "width": 821
               },
@@ -47,12 +47,12 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 267,
+                "height": 266.28125,
                 "type": "panel",
                 "width": 821
               }
             ],
-            "height": 922,
+            "height": 919.5,
             "type": "dock-v",
             "width": 821
           },
@@ -62,7 +62,7 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 922,
+            "height": 919.5,
             "type": "panel",
             "width": 459
           }
@@ -79,7 +79,8 @@
         "inspector",
         "cocos-services"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "project-settings": {
@@ -105,14 +106,22 @@
       "y": 235,
       "width": 520,
       "height": 575
+    },
+    "preferences": {
+      "x": 672,
+      "y": 240,
+      "width": 600,
+      "height": 565
     }
   },
   "panelLabelWidth": {
     "inspector": null,
     "project-settings": null,
-    "builder": null
+    "builder": null,
+    "preferences": null
   },
   "panelLabelWidth.inspector": null,
   "panelLabelWidth.project-settings": null,
-  "panelLabelWidth.builder": null
+  "panelLabelWidth.builder": null,
+  "panelLabelWidth.preferences": null
 }
