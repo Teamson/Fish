@@ -8,6 +8,7 @@ export default class SlideNeedle extends cc.Component {
     @property
     bottomY:number = 0
 
+    isBottom:boolean = true
     validTouch: boolean = true
     moveCB: Function = null
     touchStartPos: cc.Vec2 = cc.v2(0, 0)
@@ -36,14 +37,18 @@ export default class SlideNeedle extends cc.Component {
         this.node.y += dty
         if (this.node.y < this.bottomY) {
             this.node.y = this.bottomY
+            this.isBottom = true
+            this.moveCB && this.moveCB(0)
             return
         }
         if (this.node.y > this.topY) {
             this.node.y = this.topY
+            this.isBottom = false
+            this.moveCB && this.moveCB(0)
             return
         }
 
-        this.moveCB && this.moveCB()
+        this.moveCB && this.moveCB(dty)
         this.touchStartPos = pos
     }
 

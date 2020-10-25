@@ -30,6 +30,7 @@ var SlideNeedle = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.topY = 0;
         _this.bottomY = 0;
+        _this.isBottom = true;
         _this.validTouch = true;
         _this.moveCB = null;
         _this.touchStartPos = cc.v2(0, 0);
@@ -59,13 +60,17 @@ var SlideNeedle = /** @class */ (function (_super) {
         this.node.y += dty;
         if (this.node.y < this.bottomY) {
             this.node.y = this.bottomY;
+            this.isBottom = true;
+            this.moveCB && this.moveCB(0);
             return;
         }
         if (this.node.y > this.topY) {
             this.node.y = this.topY;
+            this.isBottom = false;
+            this.moveCB && this.moveCB(0);
             return;
         }
-        this.moveCB && this.moveCB();
+        this.moveCB && this.moveCB(dty);
         this.touchStartPos = pos;
     };
     SlideNeedle.prototype.touchEnd = function (event) {

@@ -32,6 +32,7 @@ var Sharp = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.pointNode = null;
         _this.moveSpeed = 1;
+        _this.isMoving = false;
         _this.pointIndex = 0;
         return _this;
     }
@@ -43,11 +44,17 @@ var Sharp = /** @class */ (function (_super) {
     Sharp.prototype.moveToPoint = function (index) {
         var _this = this;
         return new Promise(function (rs, rj) {
+            if (_this.isMoving) {
+                rs();
+                return;
+            }
+            _this.isMoving = true;
             var desPos = _this.pointNode.children[index].getPosition();
             var dis = Utility_1.default.getWorldDis(_this.pointNode.children[index], _this.node);
             var a1 = cc.moveTo(dis / 300 /* this.moveSpeed */, desPos);
             var a2 = cc.callFunc(function () {
                 _this.pointIndex = index;
+                _this.isMoving = false;
                 rs();
             });
             var a3 = cc.sequence(a1, a2);
