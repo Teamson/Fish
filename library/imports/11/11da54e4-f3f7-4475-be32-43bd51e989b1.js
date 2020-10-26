@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var PlayerData = /** @class */ (function () {
     function PlayerData() {
-        this.grade = 10;
+        this.grade = 14;
         this.coin = 0;
         this.power = 5;
         this.tipsNum = 1;

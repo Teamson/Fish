@@ -33,6 +33,7 @@ var Needle = /** @class */ (function (_super) {
         _this.lostHead = false;
         _this.onceTrigger = false;
         _this.isAwake = true;
+        _this.twiceRemove = false;
         _this.needle = null;
         _this.pointNode = null;
         _this.isTouching = false;
@@ -48,9 +49,10 @@ var Needle = /** @class */ (function (_super) {
     Needle.prototype.onLoad = function () {
         this.myId = this.node.parent.children.indexOf(this.node);
         this.needle = this.node.getChildByName('needle');
-        this.needleLength = this.needle.width;
         this.myDir = cc.v2(this.needle.right.x, this.needle.right.y);
         this.pointNode = this.node.getChildByName('pointNode');
+        var lastPoint = this.pointNode.children[this.pointNode.childrenCount - 1];
+        this.needleLength = Utility_1.default.getWorldDis(lastPoint, this.needle);
         this.middlePos = this.needle.getPosition().add(this.myDir.mul(this.needleLength / 2));
         this.needleStartPos = this.needle.getPosition();
     };
@@ -99,6 +101,9 @@ var Needle = /** @class */ (function (_super) {
                 else {
                     this.switchState = i + 1;
                     this.needle.setPosition(p.getPosition());
+                    if (this.twiceRemove && this.switchState == 2) {
+                        this.node.active = false;
+                    }
                 }
                 this.pointNode.children.forEach(function (c) { c.active = true; });
                 p.active = false;
@@ -128,6 +133,9 @@ var Needle = /** @class */ (function (_super) {
     __decorate([
         property
     ], Needle.prototype, "isAwake", void 0);
+    __decorate([
+        property
+    ], Needle.prototype, "twiceRemove", void 0);
     Needle = __decorate([
         ccclass
     ], Needle);

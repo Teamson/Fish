@@ -3,7 +3,7 @@ import Utility from "../Mod/Utility";
 const { ccclass, property } = cc._decorator;
 
 export class PlayerData {
-    grade: number = 10
+    grade: number = 14
     coin: number = 0
     power:number = 5
     tipsNum:number = 1

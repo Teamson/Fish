@@ -13,6 +13,8 @@ export default class Needle extends cc.Component {
     onceTrigger: boolean = false
     @property
     isAwake: boolean = true
+    @property
+    twiceRemove: boolean = false
 
     needle: cc.Node = null
     pointNode: cc.Node = null
@@ -31,9 +33,10 @@ export default class Needle extends cc.Component {
     onLoad() {
         this.myId = this.node.parent.children.indexOf(this.node)
         this.needle = this.node.getChildByName('needle')
-        this.needleLength = this.needle.width
         this.myDir = cc.v2(this.needle.right.x, this.needle.right.y)
         this.pointNode = this.node.getChildByName('pointNode')
+        let lastPoint = this.pointNode.children[this.pointNode.childrenCount - 1]
+        this.needleLength = Utility.getWorldDis(lastPoint, this.needle)
         this.middlePos = this.needle.getPosition().add(this.myDir.mul(this.needleLength / 2))
         this.needleStartPos = this.needle.getPosition()
     }
@@ -88,6 +91,9 @@ export default class Needle extends cc.Component {
                 } else {
                     this.switchState = i + 1
                     this.needle.setPosition(p.getPosition())
+                    if (this.twiceRemove && this.switchState == 2) {
+                        this.node.active = false
+                    }
                 }
 
                 this.pointNode.children.forEach((c) => { c.active = true })
