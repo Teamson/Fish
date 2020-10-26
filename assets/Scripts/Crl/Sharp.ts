@@ -11,6 +11,7 @@ export default class Sharp extends cc.Component {
 
     moveSpeed: number = 1
 
+    isMoving: boolean = false
     @property
     pointIndex: number = 0
 
@@ -24,11 +25,17 @@ export default class Sharp extends cc.Component {
 
     moveToPoint(index: number) {
         return new Promise((rs, rj) => {
+            if (this.isMoving) {
+                rs()
+                return
+            }
+            this.isMoving = true
             let desPos = this.pointNode.children[index].getPosition()
             let dis = Utility.getWorldDis(this.pointNode.children[index], this.node)
             let a1 = cc.moveTo(dis / 300/* this.moveSpeed */, desPos)
             let a2 = cc.callFunc(() => {
                 this.pointIndex = index
+                this.isMoving = false
                 rs()
             })
             let a3 = cc.sequence(a1, a2)

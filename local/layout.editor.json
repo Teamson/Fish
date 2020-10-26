@@ -36,7 +36,7 @@
                 "children": [
                   "scene"
                 ],
-                "height": 652,
+                "height": 651.421875,
                 "type": "panel",
                 "width": 821
               },
@@ -47,7 +47,7 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 267,
+                "height": 267.578125,
                 "type": "panel",
                 "width": 821
               }
@@ -105,14 +105,22 @@
       "y": 235,
       "width": 520,
       "height": 575
+    },
+    "preferences": {
+      "x": 672,
+      "y": 240,
+      "width": 600,
+      "height": 565
     }
   },
   "panelLabelWidth": {
     "inspector": null,
     "project-settings": null,
-    "builder": null
+    "builder": null,
+    "preferences": null
   },
   "panelLabelWidth.inspector": null,
   "panelLabelWidth.project-settings": null,
-  "panelLabelWidth.builder": null
+  "panelLabelWidth.builder": null,
+  "panelLabelWidth.preferences": null
 }

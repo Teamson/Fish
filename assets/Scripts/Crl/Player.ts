@@ -10,6 +10,7 @@ export default class Player extends cc.Component {
 
     gotMeat: boolean = false
 
+    isMoving: boolean = false
     moveSpeed: number = 1
     pointIndex: number = 0
 
@@ -28,9 +29,15 @@ export default class Player extends cc.Component {
 
     moveToPoint(index: number) {
         return new Promise((rs, rj) => {
+            if (this.isMoving) {
+                rs()
+                return
+            }
+            this.isMoving = true
             let a1 = cc.moveTo(this.moveSpeed, this.pointNode.children[index].getPosition())
             let a2 = cc.callFunc(() => {
                 this.pointIndex = index
+                this.isMoving = false
                 rs()
             })
             let a3 = cc.sequence(a1, a2)

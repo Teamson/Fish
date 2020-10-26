@@ -31,6 +31,7 @@ var Player = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.pointNode = null;
         _this.gotMeat = false;
+        _this.isMoving = false;
         _this.moveSpeed = 1;
         _this.pointIndex = 0;
         return _this;
@@ -48,9 +49,15 @@ var Player = /** @class */ (function (_super) {
     Player.prototype.moveToPoint = function (index) {
         var _this = this;
         return new Promise(function (rs, rj) {
+            if (_this.isMoving) {
+                rs();
+                return;
+            }
+            _this.isMoving = true;
             var a1 = cc.moveTo(_this.moveSpeed, _this.pointNode.children[index].getPosition());
             var a2 = cc.callFunc(function () {
                 _this.pointIndex = index;
+                _this.isMoving = false;
                 rs();
             });
             var a3 = cc.sequence(a1, a2);
