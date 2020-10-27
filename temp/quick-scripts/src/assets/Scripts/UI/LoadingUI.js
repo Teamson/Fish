@@ -37,8 +37,8 @@ var LoadingUI = /** @class */ (function (_super) {
     LoadingUI.prototype.onLoad = function () {
         localStorage.clear();
         cc.director.getPhysicsManager().enabled = true;
-        cc.director.getCollisionManager().enabled = true;
-        cc.director.getPhysicsManager().debugDrawFlags = 1;
+        // cc.director.getCollisionManager().enabled = true
+        // cc.director.getPhysicsManager().debugDrawFlags = 1
         // cc.find('ExportNode').zIndex = 999
         // cc.game.addPersistRootNode(cc.find('ExportNode'))
         PlayerDataMgr_1.default.getPlayerData();

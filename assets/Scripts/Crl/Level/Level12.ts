@@ -6,7 +6,6 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class Level12 extends LevelBase {
 
-    @property(cc.Node)
     MainCamera: cc.Node = null
 
     @property(cc.Node)
@@ -21,6 +20,7 @@ export default class Level12 extends LevelBase {
     gameStarted: boolean = false
 
     onEnable() {
+        this.MainCamera = cc.find('Canvas/Main Camera')
         this.SharpRedCrl = this.SharpRed.getComponent(Sharp)
         this.schedule(this.updateCB)
     }

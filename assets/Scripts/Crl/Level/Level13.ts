@@ -7,7 +7,6 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class Level13 extends LevelBase {
 
-    @property(cc.Node)
     MainCamera: cc.Node = null
 
     @property(cc.Node)
@@ -27,6 +26,7 @@ export default class Level13 extends LevelBase {
     movetoDes: boolean = false
 
     onEnable() {
+        this.MainCamera = cc.find('Canvas/Main Camera')
         this.schedule(this.updateCB)
     }
 

@@ -23,11 +23,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var PlayerDataMgr_1 = require("../Libs/PlayerDataMgr");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var GameLogic = /** @class */ (function (_super) {
     __extends(GameLogic, _super);
     function GameLogic() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.LevelNode = null;
         _this.FinishUI = null;
         _this.DefeatUI = null;
         return _this;
@@ -36,8 +38,18 @@ var GameLogic = /** @class */ (function (_super) {
     GameLogic_1 = GameLogic;
     GameLogic.prototype.onLoad = function () {
         GameLogic_1.Share = this;
+        this.addLevelNode();
     };
     GameLogic.prototype.start = function () {
+    };
+    GameLogic.prototype.addLevelNode = function () {
+        var _this = this;
+        cc.loader.loadRes('Prefabs/LevelNode/Level' + PlayerDataMgr_1.default.getPlayerData().grade, cc.Prefab, function (err, prefab) {
+            if (prefab) {
+                var p = cc.instantiate(prefab);
+                _this.LevelNode.addChild(p);
+            }
+        });
     };
     GameLogic.prototype.showFinishUI = function () {
         this.FinishUI.active = true;
@@ -46,6 +58,9 @@ var GameLogic = /** @class */ (function (_super) {
         this.DefeatUI.active = true;
     };
     var GameLogic_1;
+    __decorate([
+        property(cc.Node)
+    ], GameLogic.prototype, "LevelNode", void 0);
     __decorate([
         property(cc.Node)
     ], GameLogic.prototype, "FinishUI", void 0);

@@ -74,6 +74,7 @@ var Level12 = /** @class */ (function (_super) {
         return _this;
     }
     Level12.prototype.onEnable = function () {
+        this.MainCamera = cc.find('Canvas/Main Camera');
         this.SharpRedCrl = this.SharpRed.getComponent(Sharp_1.default);
         this.schedule(this.updateCB);
     };
@@ -250,9 +251,6 @@ var Level12 = /** @class */ (function (_super) {
             });
         });
     };
-    __decorate([
-        property(cc.Node)
-    ], Level12.prototype, "MainCamera", void 0);
     __decorate([
         property(cc.Node)
     ], Level12.prototype, "SharpRed", void 0);

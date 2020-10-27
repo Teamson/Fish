@@ -77,6 +77,7 @@ var Level13 = /** @class */ (function (_super) {
         return _this;
     }
     Level13.prototype.onEnable = function () {
+        this.MainCamera = cc.find('Canvas/Main Camera');
         this.schedule(this.updateCB);
     };
     Level13.prototype.updateCB = function () {
@@ -257,9 +258,6 @@ var Level13 = /** @class */ (function (_super) {
             });
         });
     };
-    __decorate([
-        property(cc.Node)
-    ], Level13.prototype, "MainCamera", void 0);
     __decorate([
         property(cc.Node)
     ], Level13.prototype, "FireNode1", void 0);
