@@ -169,6 +169,8 @@ export default class Level19 extends LevelBase {
     }
     async trigger50() {
         await this.Sharp1Crl.moveToPoint(7)
+        this.Sharp1Crl.aniCrl.playAnimationByName(3)
+        this.scheduleOnce(() => { this.Sharp1Crl.aniCrl.playAnimationByName(0) }, 0.5)
         this.meatNode.destroy()
         this.loseCB()
     }

@@ -8,6 +8,8 @@ const { ccclass, property } = cc._decorator;
 export default class Level17 extends LevelBase {
 
     @property(cc.Node)
+    WaterSwitch1: cc.Node = null
+    @property(cc.Node)
     pointNode: cc.Node = null
     @property(cc.Node)
     SlideNeedle: cc.Node = null
@@ -21,6 +23,10 @@ export default class Level17 extends LevelBase {
     }
 
     async updateCB() {
+
+        this.WaterSwitch.children[0].active = this.SlideNeedleCrl.isBottom
+        this.WaterSwitch1.children[0].active = this.getNeedleCrlById(2).switchState > 0
+
         for (let i = 0; i < this.pointNode.childrenCount; i++) {
             let p = this.pointNode.children[i]
             if (Utility.getWorldDis(this.playerNode, p) <= 50 && this.playerCrl.pointIndex != i) {

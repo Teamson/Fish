@@ -303,11 +303,14 @@ var Level19 = /** @class */ (function (_super) {
     };
     Level19.prototype.trigger50 = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.Sharp1Crl.moveToPoint(7)];
                     case 1:
                         _a.sent();
+                        this.Sharp1Crl.aniCrl.playAnimationByName(3);
+                        this.scheduleOnce(function () { _this.Sharp1Crl.aniCrl.playAnimationByName(0); }, 0.5);
                         this.meatNode.destroy();
                         this.loseCB();
                         return [2 /*return*/];

@@ -24,7 +24,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var WxApi_1 = require("../Libs/WxApi");
+var ShareMgr_1 = require("../Mod/ShareMgr");
 var PlayerDataMgr_1 = require("../Libs/PlayerDataMgr");
+var ExportUtils_1 = require("../../ExportLibs/ExportUtils");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var LoadingUI = /** @class */ (function (_super) {
     __extends(LoadingUI, _super);
@@ -35,13 +37,12 @@ var LoadingUI = /** @class */ (function (_super) {
         // update (dt) {}
     }
     LoadingUI.prototype.onLoad = function () {
-        localStorage.clear();
+        //localStorage.clear()
+        cc.director.getCollisionManager().enabled = true;
         cc.director.getPhysicsManager().enabled = true;
-        // cc.director.getCollisionManager().enabled = true
-        // cc.director.getPhysicsManager().debugDrawFlags = 1
-        // cc.find('ExportNode').zIndex = 999
-        // cc.game.addPersistRootNode(cc.find('ExportNode'))
-        PlayerDataMgr_1.default.getPlayerData();
+        //cc.director.getPhysicsManager().debugDrawFlags = 1
+        cc.find('ExportNode').zIndex = 999;
+        cc.game.addPersistRootNode(cc.find('ExportNode'));
         //AdMgr.instance.initAd()
         WxApi_1.default.WxOnHide(function () {
             localStorage.setItem('lastDate', new Date().getDate().toString());
@@ -49,37 +50,50 @@ var LoadingUI = /** @class */ (function (_super) {
         });
     };
     LoadingUI.prototype.start = function () {
-        //ShareMgr.instance.initShare()
         var _this = this;
-        cc.director.preloadScene('StartScene', function (completeCount, totalCount) {
-            _this.pBar.progress = completeCount / totalCount;
-        }, function () {
-            cc.director.loadScene('StartScene');
+        WxApi_1.default.aldEvent('进入游戏加载页的人数');
+        ExportUtils_1.default.instance.initJJ(WxApi_1.default.version, function () {
+            ShareMgr_1.default.instance.initShare();
+            PlayerDataMgr_1.default.powerMax = ExportUtils_1.default.instance.exportCfg.front_energy_value;
+            PlayerDataMgr_1.default.getPlayerData();
+            WxApi_1.default.calculateShareNumber();
+            //获取场景值
+            if (cc.sys.platform === cc.sys.WECHAT_GAME) {
+                WxApi_1.default.sceneId = WxApi_1.default.GetLaunchPassVar().scene;
+                console.log('sceneId:', WxApi_1.default.sceneId);
+            }
+            var self = _this;
+            if (!CC_WECHATGAME) {
+                cc.director.preloadScene('StartScene', function (completeCount, totalCount) {
+                    self.pBar.progress = completeCount / totalCount;
+                }, function () {
+                    WxApi_1.default.aldEvent('成功加载进入游戏内人数');
+                    cc.director.loadScene('StartScene');
+                });
+            }
+            else {
+                cc.loader.downloader.loadSubpackage('Texture', function (err) {
+                    if (err) {
+                        return console.error(err);
+                    }
+                    cc.director.preloadScene('StartScene', function (completeCount, totalCount) {
+                        self.pBar.progress = completeCount / totalCount;
+                    }, function () {
+                        WxApi_1.default.aldEvent('成功加载进入游戏内人数');
+                        cc.director.loadScene('StartScene');
+                    });
+                    console.log('load subpackage successfully.');
+                });
+            }
+            // SoundMgr.Share.loadSounds(() => {
+            //     cc.director.preloadScene('StartScene', (completeCount: number, totalCount: number) => {
+            //         this.pBar.progress = completeCount / totalCount
+            //     }, () => {
+            //         WxApi.aldEvent('成功加载进入游戏内人数')
+            //         cc.director.loadScene('StartScene')
+            //     })
+            // })
         });
-        // SoundMgr.Share.loadSounds(() => {
-        //     cc.director.preloadScene('StartScene', (completeCount: number, totalCount: number) => {
-        //         this.pBar.progress = completeCount / totalCount
-        //     }, () => {
-        //         cc.director.loadScene('StartScene')
-        //     })
-        // })
-        // JJMgr.instance.initJJ(WxApi.version, () => {
-        //     ShareMgr.instance.initShare()
-        //     WxApi.calculateShareNumber()
-        //     //获取场景值
-        //     if (cc.sys.platform === cc.sys.WECHAT_GAME) {
-        //         WxApi.sceneId = WxApi.GetLaunchPassVar().scene
-        //         console.log('sceneId:', WxApi.sceneId)
-        //     }
-        //     // SoundMgr.Share.loadSounds(() => {
-        //     //     cc.director.preloadScene('StartScene', (completeCount: number, totalCount: number) => {
-        //     //         this.pBar.progress = completeCount / totalCount
-        //     //     }, () => {
-        //     //         WxApi.aldEvent('成功加载进入游戏内人数')
-        //     //         cc.director.loadScene('StartScene')
-        //     //     })
-        //     // })
-        // })
     };
     __decorate([
         property(cc.ProgressBar)

@@ -1,0 +1,14 @@
+{
+  "__type__": "dragonBones.DragonBonesAtlasAsset",
+  "_name": "Shark_tex",
+  "_objFlags": 0,
+  "_native": "",
+  "_atlasJson": "{\"width\":512,\"imagePath\":\"Shark_tex.png\",\"height\":512,\"name\":\"Shark\",\"SubTexture\":[{\"width\":396,\"y\":1,\"height\":264,\"name\":\"gw1_1\",\"x\":1},{\"width\":142,\"y\":267,\"height\":138,\"name\":\"gw1_2\",\"x\":1},{\"frameY\":0,\"y\":267,\"frameWidth\":88,\"frameX\":0,\"frameHeight\":128,\"width\":77,\"height\":127,\"name\":\"gw1_yj1\",\"x\":235},{\"frameY\":-13,\"y\":267,\"frameWidth\":88,\"frameX\":0,\"frameHeight\":128,\"width\":88,\"height\":114,\"name\":\"gw1_yj2\",\"x\":145},{\"frameY\":-35,\"y\":383,\"frameWidth\":88,\"frameX\":0,\"frameHeight\":128,\"width\":86,\"height\":92,\"name\":\"gw1_yj3\",\"x\":145}]}",
+  "_texture": {
+    "__uuid__": "b155320c-8064-43d7-8fcb-da8ecbbcd08b"
+  },
+  "texture": {
+    "__uuid__": "b155320c-8064-43d7-8fcb-da8ecbbcd08b"
+  },
+  "_textureAtlasData": null
+}

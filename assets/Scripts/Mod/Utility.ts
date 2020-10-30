@@ -92,4 +92,13 @@ export default class Utility {
         let y2 = rPos.y + rNode.height / 2
         return p1.x >= x1 && p1.x <= x2 && p1.y >= y1 && p1.y <= y2
     }
+
+    public static rootAction(rootNode: cc.Node, active: boolean, duration: number, cb?: Function) {
+        if (active) rootNode.active = true
+        rootNode.scale = active ? 0.1 : 1
+        let a1 = cc.scaleTo(duration, active ? 1 : 0.1)
+        let a2 = cc.callFunc(() => { cb && cb() })
+        let a3 = cc.sequence(a1, a2)
+        rootNode.runAction(a3)
+    }
 }

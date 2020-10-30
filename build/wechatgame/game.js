@@ -1,5 +1,6 @@
 "use strict";
 
+require('utils/ald-game.js');
 require('adapter-min.js');
 
 __globalAdapter.init();

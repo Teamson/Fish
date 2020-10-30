@@ -44,6 +44,7 @@ var LevelBase = /** @class */ (function (_super) {
         _this.NeedleNode = null;
         _this.Sharp = null;
         _this.SharpCrl = null;
+        _this.WaterSwitch = null;
         _this.canTouch = true;
         _this.isGameOver = false;
         _this.isWin = false;
@@ -62,6 +63,7 @@ var LevelBase = /** @class */ (function (_super) {
         this.Sharp = this.node.getChildByName('Sharp');
         if (this.Sharp)
             this.SharpCrl = this.Sharp.getComponent(Sharp_1.default);
+        this.WaterSwitch = this.node.getChildByName('WaterSwitch');
     };
     LevelBase.prototype.start = function () {
     };
@@ -89,7 +91,10 @@ var LevelBase = /** @class */ (function (_super) {
         this.playerNode.stopAllActions();
         if (this.Sharp)
             this.Sharp.stopAllActions();
-        GameLogic_1.default.Share.showFinishUI();
+        this.playerCrl.aniCrl.playAnimationByName(4);
+        this.scheduleOnce(function () {
+            GameLogic_1.default.Share.showFinishUI();
+        }, 2);
     };
     LevelBase.prototype.loseCB = function () {
         if (this.isGameOver)
@@ -99,7 +104,10 @@ var LevelBase = /** @class */ (function (_super) {
         this.playerNode.stopAllActions();
         if (this.Sharp)
             this.Sharp.stopAllActions();
-        GameLogic_1.default.Share.showDefeatUI();
+        this.playerCrl.aniCrl.playAnimationByName(2);
+        this.scheduleOnce(function () {
+            GameLogic_1.default.Share.showDefeatUI();
+        }, 2);
     };
     LevelBase.prototype.getNeedleCrlById = function (id) {
         return this.NeedleNode.children[id].getComponent(Needle_1.default);

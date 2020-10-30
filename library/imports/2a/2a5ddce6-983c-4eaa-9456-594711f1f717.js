@@ -66,6 +66,7 @@ var Level17 = /** @class */ (function (_super) {
     __extends(Level17, _super);
     function Level17() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.WaterSwitch1 = null;
         _this.pointNode = null;
         _this.SlideNeedle = null;
         _this.SlideNeedleCrl = null;
@@ -81,6 +82,8 @@ var Level17 = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             var i, p, i, p;
             return __generator(this, function (_a) {
+                this.WaterSwitch.children[0].active = this.SlideNeedleCrl.isBottom;
+                this.WaterSwitch1.children[0].active = this.getNeedleCrlById(2).switchState > 0;
                 for (i = 0; i < this.pointNode.childrenCount; i++) {
                     p = this.pointNode.children[i];
                     if (Utility_1.default.getWorldDis(this.playerNode, p) <= 50 && this.playerCrl.pointIndex != i) {
@@ -216,6 +219,9 @@ var Level17 = /** @class */ (function (_super) {
             });
         });
     };
+    __decorate([
+        property(cc.Node)
+    ], Level17.prototype, "WaterSwitch1", void 0);
     __decorate([
         property(cc.Node)
     ], Level17.prototype, "pointNode", void 0);

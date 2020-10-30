@@ -58,13 +58,39 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var Utility_1 = require("../../Mod/Utility");
 var LevelBase_1 = require("./LevelBase");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Level3 = /** @class */ (function (_super) {
     __extends(Level3, _super);
     function Level3() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.poisonNode = null;
+        return _this;
     }
+    Level3.prototype.onEnable = function () {
+        this.schedule(this.updateCB);
+    };
+    Level3.prototype.updateCB = function () {
+        if (this.meatNode.isValid && !this.isGameOver) {
+            for (var i = 0; i < this.poisonNode.childrenCount; i++) {
+                var p = this.poisonNode.children[i];
+                if (Utility_1.default.getWorldDis(this.meatNode, p) <= 100) {
+                    this.loseCB();
+                    return;
+                }
+            }
+        }
+        if (!this.isGameOver) {
+            for (var i = 0; i < this.poisonNode.childrenCount; i++) {
+                var p = this.poisonNode.children[i];
+                if (Utility_1.default.getWorldDis(this.playerNode, p) <= 100) {
+                    this.loseCB();
+                    return;
+                }
+            }
+        }
+    };
     Level3.prototype.trigger00 = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
@@ -96,6 +122,7 @@ var Level3 = /** @class */ (function (_super) {
     Level3.prototype.trigger20 = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                this.canTouch = true;
                 return [2 /*return*/];
             });
         });
@@ -103,10 +130,14 @@ var Level3 = /** @class */ (function (_super) {
     Level3.prototype.trigger30 = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                this.canTouch = true;
                 return [2 /*return*/];
             });
         });
     };
+    __decorate([
+        property(cc.Node)
+    ], Level3.prototype, "poisonNode", void 0);
     Level3 = __decorate([
         ccclass
     ], Level3);

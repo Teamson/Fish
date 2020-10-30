@@ -85,6 +85,7 @@ var Level12 = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        this.WaterSwitch.children[0].active = this.getNeedleCrlById(2).switchState > 0;
                         if (!this.gameStarted) {
                             this.canTouch = false;
                             this.gameStarted = true;

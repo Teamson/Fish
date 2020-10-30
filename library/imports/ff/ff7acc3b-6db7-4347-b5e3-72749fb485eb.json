@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yd_kuzl",
+    "texture": "b7db5b2d-7d52-4872-ae2d-f8dc93618bca",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      131,
+      130
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      135,
+      132
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

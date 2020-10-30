@@ -29,7 +29,7 @@ var JJMgr = /** @class */ (function () {
     function JJMgr() {
         this.exportCfg = null;
         this.navigateAppArr = [];
-        this.url = 'https://jiujiu.99huyu.cn/m/xinyifu/config.json?version=';
+        this.url = 'https://tthy.jiujiuhuyu.com/wx/bwmrenyu/config.json?version=';
         this.isFinished = false;
     }
     JJMgr_1 = JJMgr;

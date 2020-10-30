@@ -78,6 +78,7 @@ var Level18 = /** @class */ (function (_super) {
     };
     Level18.prototype.updateCB = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
             return __generator(this, function (_a) {
                 if (!this.isGameOver && this.Sharp1.isValid && this.meatNode.isValid) {
                     if (Utility_1.default.getWorldDis(this.Sharp1, this.meatNode) <= 50) {
@@ -88,6 +89,9 @@ var Level18 = /** @class */ (function (_super) {
                 }
                 if (!this.isGameOver && this.Sharp.isValid && this.Meat1.isValid) {
                     if (Utility_1.default.getWorldDis(this.Sharp, this.Meat1) <= 50) {
+                        this.Sharp.pauseAllActions();
+                        this.SharpCrl.aniCrl.playAnimationByName(3);
+                        this.scheduleOnce(function () { _this.Sharp.resumeAllActions(); }, 0.5);
                         this.Meat1.destroy();
                         return [2 /*return*/];
                     }
@@ -215,6 +219,7 @@ var Level18 = /** @class */ (function (_super) {
     };
     Level18.prototype.trigger30 = function () {
         return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -223,6 +228,8 @@ var Level18 = /** @class */ (function (_super) {
                     case 1:
                         _a.sent();
                         if (this.Sharp1.isValid) {
+                            this.SharpCrl.aniCrl.playAnimationByName(3);
+                            this.scheduleOnce(function () { _this.SharpCrl.aniCrl.playAnimationByName(0); }, 0.5);
                             this.Sharp1.destroy();
                         }
                         this.canTouch = true;

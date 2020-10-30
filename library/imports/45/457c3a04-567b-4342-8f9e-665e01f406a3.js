@@ -67,6 +67,7 @@ var Level10 = /** @class */ (function (_super) {
     __extends(Level10, _super);
     function Level10() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.WaterSwitch1 = null;
         _this.pointNode = null;
         _this.ThreeNeedle = null;
         _this.SlideNeedle = null;
@@ -89,6 +90,8 @@ var Level10 = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        this.WaterSwitch.children[0].active = this.SlideNeedleCrl.isBottom;
+                        this.WaterSwitch1.children[0].active = this.getNeedleCrlById(1).switchState > 0;
                         if (this.isGameOver)
                             return [2 /*return*/];
                         for (i = 0; i < this.pointNode.childrenCount; i++) {
@@ -125,7 +128,8 @@ var Level10 = /** @class */ (function (_super) {
                         this.canTouch = true;
                         _a.label = 3;
                     case 3:
-                        if (!(this.SharpCrl.pointIndex == 5 && !this.SharpCrl.isMoving && this.getNeedleCrlById(1).switchState > 0)) return [3 /*break*/, 5];
+                        if (!(this.SharpCrl.pointIndex == 5 && !this.SharpCrl.isMoving && this.getNeedleCrlById(1).switchState > 0 && !this.playerCrl.isMoving &&
+                            !this.playerCrl.gotMeat)) return [3 /*break*/, 5];
                         this.canTouch = false;
                         return [4 /*yield*/, this.SharpCrl.moveToPoint(6)];
                     case 4:
@@ -264,6 +268,9 @@ var Level10 = /** @class */ (function (_super) {
             });
         });
     };
+    __decorate([
+        property(cc.Node)
+    ], Level10.prototype, "WaterSwitch1", void 0);
     __decorate([
         property(cc.Node)
     ], Level10.prototype, "pointNode", void 0);

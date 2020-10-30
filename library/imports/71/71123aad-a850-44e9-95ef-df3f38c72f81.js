@@ -25,6 +25,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var Utility_1 = require("../Mod/Utility");
 var LevelBase_1 = require("./Level/LevelBase");
+var SharpAni_1 = require("./SharpAni");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Sharp = /** @class */ (function (_super) {
     __extends(Sharp, _super);
@@ -34,10 +35,12 @@ var Sharp = /** @class */ (function (_super) {
         _this.moveSpeed = 1;
         _this.isMoving = false;
         _this.pointIndex = 0;
+        _this.aniCrl = null;
         return _this;
     }
     Sharp.prototype.onLoad = function () {
         this.pointNode = LevelBase_1.default.Share.node.getChildByName('PointNode');
+        this.aniCrl = this.node.children[0].getComponent(SharpAni_1.default);
     };
     Sharp.prototype.start = function () {
     };
@@ -48,13 +51,16 @@ var Sharp = /** @class */ (function (_super) {
                 rs();
                 return;
             }
+            _this.aniCrl.playAnimationByName(1);
             _this.isMoving = true;
             var desPos = _this.pointNode.children[index].getPosition();
+            _this.node.scaleX = Math.abs(_this.node.scaleX) * (desPos.x < _this.node.x ? 1 : -1);
             var dis = Utility_1.default.getWorldDis(_this.pointNode.children[index], _this.node);
             var a1 = cc.moveTo(dis / 300 /* this.moveSpeed */, desPos);
             var a2 = cc.callFunc(function () {
                 _this.pointIndex = index;
                 _this.isMoving = false;
+                _this.aniCrl.playAnimationByName(0);
                 rs();
             });
             var a3 = cc.sequence(a1, a2);
@@ -64,6 +70,7 @@ var Sharp = /** @class */ (function (_super) {
     Sharp.prototype.checkEatPlayer = function () {
         if (!LevelBase_1.default.Share.isGameOver) {
             if (Utility_1.default.getWorldDis(this.node, LevelBase_1.default.Share.playerNode) <= 50) {
+                this.aniCrl.playAnimationByName(3);
                 LevelBase_1.default.Share.loseCB();
             }
         }

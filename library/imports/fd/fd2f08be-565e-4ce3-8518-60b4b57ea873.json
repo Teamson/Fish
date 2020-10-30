@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fh_blxx1",
+    "texture": "02cdfe90-0b02-4d13-a57a-53633a0e7ae7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      117,
+      29
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      117,
+      29
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

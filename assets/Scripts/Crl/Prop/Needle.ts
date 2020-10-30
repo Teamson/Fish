@@ -39,6 +39,8 @@ export default class Needle extends cc.Component {
         this.needleLength = Utility.getWorldDis(lastPoint, this.needle)
         this.middlePos = this.needle.getPosition().add(this.myDir.mul(this.needleLength / 2))
         this.needleStartPos = this.needle.getPosition()
+
+        this.needle.width += 100
     }
 
     start() {

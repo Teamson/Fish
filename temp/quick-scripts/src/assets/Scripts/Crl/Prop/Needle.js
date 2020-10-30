@@ -55,6 +55,7 @@ var Needle = /** @class */ (function (_super) {
         this.needleLength = Utility_1.default.getWorldDis(lastPoint, this.needle);
         this.middlePos = this.needle.getPosition().add(this.myDir.mul(this.needleLength / 2));
         this.needleStartPos = this.needle.getPosition();
+        this.needle.width += 100;
     };
     Needle.prototype.start = function () {
         this.needle.on(cc.Node.EventType.TOUCH_START, this.touchStart, this);

@@ -18,7 +18,6 @@ var PlayerData = /** @class */ (function () {
         this.power = 5;
         this.tipsNum = 1;
         this.exitTime = 0;
-        this.lv = 1;
     }
     return PlayerData;
 }());
@@ -30,6 +29,7 @@ var PlayerDataMgr = /** @class */ (function () {
     PlayerDataMgr.getPlayerData = function () {
         if (!localStorage.getItem('playerData')) {
             this._playerData = new PlayerData();
+            this._playerData.power = this.powerMax;
             localStorage.setItem('playerData', JSON.stringify(this._playerData));
         }
         else {
@@ -46,6 +46,63 @@ var PlayerDataMgr = /** @class */ (function () {
     PlayerDataMgr.changeCoin = function (dt) {
         this._playerData.coin += dt;
         this.setPlayerData();
+    };
+    PlayerDataMgr.changePower = function (dt) {
+        this._playerData.power += dt;
+        this.setPlayerData();
+    };
+    PlayerDataMgr.getPlayerLv = function () {
+        if (this._playerData.grade < 3) {
+            return 1;
+        }
+        else if (this._playerData.grade >= 3 && this._playerData.grade < 8) {
+            return 2;
+        }
+        else if (this._playerData.grade >= 8 && this._playerData.grade < 13) {
+            return 3;
+        }
+        else if (this._playerData.grade >= 13 && this._playerData.grade < 18) {
+            return 4;
+        }
+        else {
+            return 5;
+        }
+    };
+    PlayerDataMgr.getLeftLv = function () {
+        if (this._playerData.grade < 3) {
+            return 3 - this._playerData.grade;
+        }
+        else if (this._playerData.grade < 8) {
+            return 8 - this._playerData.grade;
+        }
+        else if (this._playerData.grade < 13) {
+            return 13 - this._playerData.grade;
+        }
+        else if (this._playerData.grade < 18) {
+            return 18 - this._playerData.grade;
+        }
+        else {
+            return 0;
+        }
+    };
+    PlayerDataMgr.getNextLvPer = function () {
+        var curLv = this.getPlayerLv();
+        var curG = this._playerData.grade;
+        if (curLv == 1) {
+            return curG / 2;
+        }
+        else if (curLv == 2) {
+            return curG / 7;
+        }
+        else if (curLv == 3) {
+            return curG / 12;
+        }
+        else if (curLv == 4) {
+            return curG / 17;
+        }
+        else if (curLv == 5) {
+            return 1;
+        }
     };
     PlayerDataMgr._playerData = null;
     PlayerDataMgr.powerMax = 5;

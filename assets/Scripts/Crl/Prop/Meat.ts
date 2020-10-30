@@ -56,6 +56,7 @@ export default class Meat extends cc.Component {
             let dis = Utility.getWorldDis(this.node, LevelBase.Share.Sharp)
             if (dis <= 50 && !this.isMoveing) {
                 //被吃掉
+                LevelBase.Share.SharpCrl.aniCrl.playAnimationByName(3)
                 this.node.destroy()
                 LevelBase.Share.loseCB()
             }

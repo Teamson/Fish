@@ -9,6 +9,8 @@ const { ccclass, property } = cc._decorator;
 export default class Level10 extends LevelBase {
 
     @property(cc.Node)
+    WaterSwitch1: cc.Node = null
+    @property(cc.Node)
     pointNode: cc.Node = null
 
     @property(cc.Node)
@@ -30,6 +32,10 @@ export default class Level10 extends LevelBase {
     }
 
     async updateCB() {
+
+        this.WaterSwitch.children[0].active = this.SlideNeedleCrl.isBottom
+        this.WaterSwitch1.children[0].active = this.getNeedleCrlById(1).switchState > 0
+
         if (this.isGameOver) return
         for (let i = 0; i < this.pointNode.childrenCount; i++) {
             let p = this.pointNode.children[i]
@@ -62,7 +68,8 @@ export default class Level10 extends LevelBase {
             this.canTouch = true
         }
 
-        if (this.SharpCrl.pointIndex == 5 && !this.SharpCrl.isMoving && this.getNeedleCrlById(1).switchState > 0) {
+        if (this.SharpCrl.pointIndex == 5 && !this.SharpCrl.isMoving && this.getNeedleCrlById(1).switchState > 0 && !this.playerCrl.isMoving &&
+            !this.playerCrl.gotMeat) {
             this.canTouch = false
             await this.SharpCrl.moveToPoint(6)
         }

@@ -13,6 +13,8 @@ export default class FinishGameUI extends cc.Component {
 
     navId: number = 0
 
+    isOne: boolean = false
+
     // onLoad () {}
 
     start() {
@@ -20,10 +22,21 @@ export default class FinishGameUI extends cc.Component {
     }
 
     showUI(callback?: Function, param?: any) {
+        this.isOne = false
         if (param && param.posY) {
             this.rootNode.y = param.posY
         }
+        if (param && param.one) {
+            this.isOne = param.one
+        }
+
         this.node.active = true
+
+        if (this.isOne) {
+            for (let i = 0; i < this.rootNode.childrenCount; i++) {
+                this.rootNode.children[i].active = i < 3
+            }
+        }
     }
 
     onEnable() {

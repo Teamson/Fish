@@ -3,7 +3,7 @@ import PlayerDataMgr from "./PlayerDataMgr"
 import AdMgr from "../Mod/AdMgr"
 
 export default class WxApi {
-    public static version: string = '1.0.0'
+    public static version: string = '1.0.1'
     public static isVibrate: boolean = true
     public static isMusic: boolean = true
     public static OnShowFun: Function = null
@@ -167,6 +167,7 @@ export default class WxApi {
             //新的一天
             this.front_share_number = JJMgr.instance.exportCfg.front_share_number
         }
+        if (!this.front_share_number) this.front_share_number = 0
         console.log('this.front_share_number:', this.front_share_number)
     }
 
@@ -194,16 +195,16 @@ export default class WxApi {
         let s: string = JJMgr.instance.exportCfg.front_wuchu_scene.toString()
         if (s.search('|') == -1) {
             let sInt: number = parseInt(s)
-            return sInt != WxApi.sceneId
+            return sInt == WxApi.sceneId
         }
         let sArr: string[] = s.split('|')
         for (let i = 0; i < sArr.length; i++) {
             let sInt: number = parseInt(sArr[i])
             if (sInt == WxApi.sceneId) {
-                return false
+                return true
             }
         }
-        return true
+        return false
     }
 
     public static bannerTO2: number = -1

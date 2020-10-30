@@ -29,7 +29,7 @@ export default class JJMgr {
     exportCfg: any = null
     navigateAppArr: any[] = []
 
-    url: string = 'https://jiujiu.99huyu.cn/m/xinyifu/config.json?version='
+    url: string = 'https://tthy.jiujiuhuyu.com/wx/bwmrenyu/config.json?version='
 
     isFinished: boolean = false
 

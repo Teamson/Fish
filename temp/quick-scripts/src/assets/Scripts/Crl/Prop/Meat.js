@@ -73,6 +73,7 @@ var Meat = /** @class */ (function (_super) {
             var dis = Utility_1.default.getWorldDis(this.node, LevelBase_1.default.Share.Sharp);
             if (dis <= 50 && !this.isMoveing) {
                 //被吃掉
+                LevelBase_1.default.Share.SharpCrl.aniCrl.playAnimationByName(3);
                 this.node.destroy();
                 LevelBase_1.default.Share.loseCB();
             }

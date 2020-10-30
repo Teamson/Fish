@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Mermaid_tex",
+    "texture": "8ee06f91-cfc0-4730-89ad-a79c80733cc1",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      1018,
+      772
+    ],
+    "offset": [
+      -2,
+      125
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

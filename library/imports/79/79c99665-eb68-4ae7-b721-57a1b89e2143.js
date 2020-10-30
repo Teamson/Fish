@@ -58,14 +58,25 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var GuideFinger_1 = require("../GuideFinger");
 var Stone_1 = require("../Prop/Stone");
 var LevelBase_1 = require("./LevelBase");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Level5 = /** @class */ (function (_super) {
     __extends(Level5, _super);
     function Level5() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.guideFinger = null;
+        return _this;
     }
+    Level5.prototype.onEnable = function () {
+        this.guideFinger.stepAction();
+        this.schedule(this.updateCB);
+    };
+    Level5.prototype.updateCB = function () {
+        this.guideFinger.node.active = this.getNeedleCrlById(1).lostHead;
+        Stone_1.default.Share.node.active = this.Sharp.isValid;
+    };
     Level5.prototype.trigger00 = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
@@ -113,12 +124,18 @@ var Level5 = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.SharpCrl.moveToPoint(0)];
                     case 1:
                         _a.sent();
-                        _a.label = 2;
-                    case 2: return [2 /*return*/];
+                        return [3 /*break*/, 3];
+                    case 2:
+                        this.canTouch = true;
+                        _a.label = 3;
+                    case 3: return [2 /*return*/];
                 }
             });
         });
     };
+    __decorate([
+        property(GuideFinger_1.default)
+    ], Level5.prototype, "guideFinger", void 0);
     Level5 = __decorate([
         ccclass
     ], Level5);

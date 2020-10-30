@@ -145,6 +145,8 @@ var WxApi = /** @class */ (function () {
             //新的一天
             this.front_share_number = ExportUtils_1.default.instance.exportCfg.front_share_number;
         }
+        if (!this.front_share_number)
+            this.front_share_number = 0;
         console.log('this.front_share_number:', this.front_share_number);
     };
     //误触控制
@@ -170,16 +172,16 @@ var WxApi = /** @class */ (function () {
         var s = ExportUtils_1.default.instance.exportCfg.front_wuchu_scene.toString();
         if (s.search('|') == -1) {
             var sInt = parseInt(s);
-            return sInt != WxApi.sceneId;
+            return sInt == WxApi.sceneId;
         }
         var sArr = s.split('|');
         for (var i = 0; i < sArr.length; i++) {
             var sInt = parseInt(sArr[i]);
             if (sInt == WxApi.sceneId) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     };
     WxApi.bannerWuChu2 = function () {
         var _this = this;
@@ -228,7 +230,7 @@ var WxApi = /** @class */ (function () {
         }
         return iArr;
     };
-    WxApi.version = '1.0.0';
+    WxApi.version = '1.0.1';
     WxApi.isVibrate = true;
     WxApi.isMusic = true;
     WxApi.OnShowFun = null;

@@ -6,9 +6,12 @@ const { ccclass, property } = cc._decorator;
 export default class Level9 extends LevelBase {
 
     @property(cc.Node)
+    smoke: cc.Node = null
+    @property(cc.Node)
     sawNode: cc.Node = null
 
     async trigger00() {
+        this.smoke.destroy()
         await this.playerCrl.moveToPoint(0)
         if (this.sawNode.isValid) {
             this.loseCB()

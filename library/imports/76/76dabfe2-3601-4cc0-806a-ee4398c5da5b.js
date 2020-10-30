@@ -24,11 +24,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var LevelBase_1 = require("./Level/LevelBase");
+var PlayerAni_1 = require("./PlayerAni");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Player = /** @class */ (function (_super) {
     __extends(Player, _super);
     function Player() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.aniCrl = null;
         _this.pointNode = null;
         _this.gotMeat = false;
         _this.isMoving = false;
@@ -39,11 +41,19 @@ var Player = /** @class */ (function (_super) {
     }
     Player.prototype.onLoad = function () {
         this.pointNode = LevelBase_1.default.Share.node.getChildByName('PointNode');
+        this.aniCrl = this.node.children[0].getComponent(PlayerAni_1.default);
     };
     Player.prototype.start = function () {
     };
     //吃掉食物
     Player.prototype.eatMean = function () {
+        var _this = this;
+        this.node.pauseAllActions();
+        this.aniCrl.playAnimationByName(3);
+        this.scheduleOnce(function () {
+            _this.aniCrl.playAnimationByName(_this.isMoving ? 1 : 0);
+            _this.node.resumeAllActions();
+        }, 1);
         this.gotMeat = true;
     };
     Player.prototype.moveToPoint = function (index) {
@@ -53,11 +63,15 @@ var Player = /** @class */ (function (_super) {
                 rs();
                 return;
             }
+            var desPos = _this.pointNode.children[index].getPosition();
+            _this.node.scaleX = Math.abs(_this.node.scaleX) * (desPos.x < _this.node.x ? 1 : -1);
+            _this.aniCrl.playAnimationByName(1);
             _this.isMoving = true;
-            var a1 = cc.moveTo(_this.moveSpeed, _this.pointNode.children[index].getPosition());
+            var a1 = cc.moveTo(_this.moveSpeed, desPos);
             var a2 = cc.callFunc(function () {
                 _this.pointIndex = index;
                 _this.isMoving = false;
+                _this.aniCrl.playAnimationByName(0);
                 rs();
             });
             var a3 = cc.sequence(a1, a2);

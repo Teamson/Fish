@@ -24,6 +24,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var PlayerDataMgr_1 = require("../Libs/PlayerDataMgr");
+var WxApi_1 = require("../Libs/WxApi");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var GameLogic = /** @class */ (function (_super) {
     __extends(GameLogic, _super);
@@ -41,15 +42,17 @@ var GameLogic = /** @class */ (function (_super) {
         this.addLevelNode();
     };
     GameLogic.prototype.start = function () {
+        if (PlayerDataMgr_1.default.getPlayerData().grade <= 10)
+            WxApi_1.default.aldEvent('第' + PlayerDataMgr_1.default.getPlayerData().grade + '关成功进入游戏');
     };
     GameLogic.prototype.addLevelNode = function () {
-        var _this = this;
-        cc.loader.loadRes('Prefabs/LevelNode/Level' + PlayerDataMgr_1.default.getPlayerData().grade, cc.Prefab, function (err, prefab) {
-            if (prefab) {
-                var p = cc.instantiate(prefab);
-                _this.LevelNode.addChild(p);
-            }
-        });
+        // cc.loader.loadRes('Prefabs/LevelNode/Level' + PlayerDataMgr.getPlayerData().grade, cc.Prefab, (err, prefab) => {
+        //     if (prefab) {
+        //         let p = cc.instantiate(prefab)
+        //         this.LevelNode.addChild(p)
+        //     }
+        // })
+        this.LevelNode.children[PlayerDataMgr_1.default.getPlayerData().grade - 1].active = true;
     };
     GameLogic.prototype.showFinishUI = function () {
         this.FinishUI.active = true;

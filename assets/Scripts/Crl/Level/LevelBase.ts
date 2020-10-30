@@ -22,6 +22,8 @@ export default class LevelBase extends cc.Component {
     Sharp: cc.Node = null
     SharpCrl: Sharp = null
 
+    WaterSwitch: cc.Node = null
+
     canTouch: boolean = true
     isGameOver: boolean = false
     isWin: boolean = false
@@ -38,10 +40,12 @@ export default class LevelBase extends cc.Component {
         this.Sharp = this.node.getChildByName('Sharp')
         if (this.Sharp)
             this.SharpCrl = this.Sharp.getComponent(Sharp)
+
+        this.WaterSwitch = this.node.getChildByName('WaterSwitch')
     }
 
     start() {
-
+        
     }
 
     triggerNeedle(index: number, pIndex: number) {
@@ -66,7 +70,10 @@ export default class LevelBase extends cc.Component {
         this.isWin = true
         this.playerNode.stopAllActions()
         if (this.Sharp) this.Sharp.stopAllActions()
-        GameLogic.Share.showFinishUI()
+        this.playerCrl.aniCrl.playAnimationByName(4)
+        this.scheduleOnce(() => {
+            GameLogic.Share.showFinishUI()
+        }, 2)
     }
 
     loseCB() {
@@ -75,7 +82,10 @@ export default class LevelBase extends cc.Component {
         this.isWin = false
         this.playerNode.stopAllActions()
         if (this.Sharp) this.Sharp.stopAllActions()
-        GameLogic.Share.showDefeatUI()
+        this.playerCrl.aniCrl.playAnimationByName(2)
+        this.scheduleOnce(() => {
+            GameLogic.Share.showDefeatUI()
+        }, 2)
     }
 
     getNeedleCrlById(id: number): Needle {

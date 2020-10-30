@@ -30,6 +30,9 @@ export default class Level18 extends LevelBase {
         }
         if (!this.isGameOver && this.Sharp.isValid && this.Meat1.isValid) {
             if (Utility.getWorldDis(this.Sharp, this.Meat1) <= 50) {
+                this.Sharp.pauseAllActions()
+                this.SharpCrl.aniCrl.playAnimationByName(3)
+                this.scheduleOnce(() => { this.Sharp.resumeAllActions() }, 0.5)
                 this.Meat1.destroy()
                 return
             }
@@ -93,6 +96,8 @@ export default class Level18 extends LevelBase {
         if (this.SharpCrl.pointIndex == 2) {
             await this.SharpCrl.moveToPoint(4)
             if (this.Sharp1.isValid) {
+                this.SharpCrl.aniCrl.playAnimationByName(3)
+                this.scheduleOnce(() => { this.SharpCrl.aniCrl.playAnimationByName(0) }, 0.5)
                 this.Sharp1.destroy()
             }
             this.canTouch = true

@@ -56,7 +56,7 @@ var TimeCountMgr = /** @class */ (function (_super) {
                 localStorage.setItem('exitTime', new Date().getTime().toString());
             });
         }
-        this.schedule(this.calculateExitTime);
+        this.schedule(this.calculateTime, 1);
     };
     TimeCountMgr.prototype.calculateExitTime = function () {
         var exitTime = 0;
@@ -66,17 +66,17 @@ var TimeCountMgr = /** @class */ (function (_super) {
         if (exitTime <= 0)
             return;
         exitTime /= 1000;
-        var t = Math.floor(exitTime / 600);
+        var t = Math.floor(exitTime / 300);
         PlayerDataMgr_1.default.getPlayerData().power += t;
-        if (PlayerDataMgr_1.default.getPlayerData().power > 10) {
-            PlayerDataMgr_1.default.getPlayerData().power = 10;
+        if (PlayerDataMgr_1.default.getPlayerData().power > PlayerDataMgr_1.default.powerMax) {
+            PlayerDataMgr_1.default.getPlayerData().power = PlayerDataMgr_1.default.powerMax;
             PlayerDataMgr_1.default.setPlayerData();
         }
     };
     TimeCountMgr.prototype.calculateTime = function () {
         if (this.tCount <= 0) {
-            if (PlayerDataMgr_1.default.getPlayerData().power < 10) {
-                this.tCount = 600;
+            if (PlayerDataMgr_1.default.getPlayerData().power < PlayerDataMgr_1.default.powerMax) {
+                this.tCount = 300;
             }
             else {
                 this.tCount = 0;
@@ -85,10 +85,10 @@ var TimeCountMgr = /** @class */ (function (_super) {
         }
         this.tCount--;
         if (this.tCount <= 0) {
-            if (PlayerDataMgr_1.default.getPlayerData().power < 10) {
+            if (PlayerDataMgr_1.default.getPlayerData().power < PlayerDataMgr_1.default.powerMax) {
                 PlayerDataMgr_1.default.getPlayerData().power += 1;
                 PlayerDataMgr_1.default.setPlayerData();
-                this.tCount = PlayerDataMgr_1.default.getPlayerData().power < 10 ? 600 : 0;
+                this.tCount = PlayerDataMgr_1.default.getPlayerData().power < PlayerDataMgr_1.default.powerMax ? 300 : 0;
             }
         }
     };

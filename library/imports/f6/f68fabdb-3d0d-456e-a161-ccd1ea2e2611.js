@@ -64,6 +64,7 @@ var Level9 = /** @class */ (function (_super) {
     __extends(Level9, _super);
     function Level9() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.smoke = null;
         _this.sawNode = null;
         return _this;
     }
@@ -71,7 +72,9 @@ var Level9 = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.playerCrl.moveToPoint(0)];
+                    case 0:
+                        this.smoke.destroy();
+                        return [4 /*yield*/, this.playerCrl.moveToPoint(0)];
                     case 1:
                         _a.sent();
                         if (!this.sawNode.isValid) return [3 /*break*/, 2];
@@ -101,6 +104,9 @@ var Level9 = /** @class */ (function (_super) {
             });
         });
     };
+    __decorate([
+        property(cc.Node)
+    ], Level9.prototype, "smoke", void 0);
     __decorate([
         property(cc.Node)
     ], Level9.prototype, "sawNode", void 0);

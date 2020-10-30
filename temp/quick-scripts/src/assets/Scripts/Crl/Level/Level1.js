@@ -58,18 +58,28 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var GuideFinger_1 = require("../GuideFinger");
 var LevelBase_1 = require("./LevelBase");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Level1 = /** @class */ (function (_super) {
     __extends(Level1, _super);
     function Level1() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.guideFinger = null;
+        return _this;
     }
+    Level1.prototype.onEnable = function () {
+        this.guideFinger.stepAction();
+    };
     Level1.prototype.trigger00 = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.meatCrl.triggerCB()];
+                    case 0:
+                        this.guideFinger.step++;
+                        this.guideFinger.stepAction();
+                        this.WaterSwitch.children[0].active = true;
+                        return [4 /*yield*/, this.meatCrl.triggerCB()];
                     case 1:
                         _a.sent();
                         this.canTouch = true;
@@ -82,7 +92,9 @@ var Level1 = /** @class */ (function (_super) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.playerCrl.moveToPoint(0)];
+                    case 0:
+                        this.guideFinger.node.active = false;
+                        return [4 /*yield*/, this.playerCrl.moveToPoint(0)];
                     case 1:
                         _a.sent();
                         return [4 /*yield*/, this.playerCrl.moveToPoint(1)];
@@ -94,6 +106,9 @@ var Level1 = /** @class */ (function (_super) {
             });
         });
     };
+    __decorate([
+        property(GuideFinger_1.default)
+    ], Level1.prototype, "guideFinger", void 0);
     Level1 = __decorate([
         ccclass
     ], Level1);

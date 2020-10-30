@@ -34,6 +34,7 @@ var FinishGameUI = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.rootNode = null;
         _this.navId = 0;
+        _this.isOne = false;
         return _this;
         // update (dt) {}
     }
@@ -41,10 +42,19 @@ var FinishGameUI = /** @class */ (function (_super) {
     FinishGameUI.prototype.start = function () {
     };
     FinishGameUI.prototype.showUI = function (callback, param) {
+        this.isOne = false;
         if (param && param.posY) {
             this.rootNode.y = param.posY;
         }
+        if (param && param.one) {
+            this.isOne = param.one;
+        }
         this.node.active = true;
+        if (this.isOne) {
+            for (var i = 0; i < this.rootNode.childrenCount; i++) {
+                this.rootNode.children[i].active = i < 3;
+            }
+        }
     };
     FinishGameUI.prototype.onEnable = function () {
         this._init();

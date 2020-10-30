@@ -34,7 +34,7 @@ export default class TimeCountMgr extends cc.Component {
             })
         }
 
-        this.schedule(this.calculateExitTime)
+        this.schedule(this.calculateTime, 1)
     }
 
     calculateExitTime() {
@@ -46,18 +46,18 @@ export default class TimeCountMgr extends cc.Component {
         if (exitTime <= 0) return
 
         exitTime /= 1000
-        let t = Math.floor(exitTime / 600)
+        let t = Math.floor(exitTime / 300)
         PlayerDataMgr.getPlayerData().power += t
-        if (PlayerDataMgr.getPlayerData().power > 10) {
-            PlayerDataMgr.getPlayerData().power = 10
+        if (PlayerDataMgr.getPlayerData().power > PlayerDataMgr.powerMax) {
+            PlayerDataMgr.getPlayerData().power = PlayerDataMgr.powerMax
             PlayerDataMgr.setPlayerData()
         }
     }
 
     calculateTime() {
         if (this.tCount <= 0) {
-            if (PlayerDataMgr.getPlayerData().power < 10) {
-                this.tCount = 600
+            if (PlayerDataMgr.getPlayerData().power < PlayerDataMgr.powerMax) {
+                this.tCount = 300
             } else {
                 this.tCount = 0
             }
@@ -66,10 +66,10 @@ export default class TimeCountMgr extends cc.Component {
         this.tCount--
 
         if (this.tCount <= 0) {
-            if (PlayerDataMgr.getPlayerData().power < 10) {
+            if (PlayerDataMgr.getPlayerData().power < PlayerDataMgr.powerMax) {
                 PlayerDataMgr.getPlayerData().power += 1
                 PlayerDataMgr.setPlayerData()
-                this.tCount = PlayerDataMgr.getPlayerData().power < 10 ? 600 : 0
+                this.tCount = PlayerDataMgr.getPlayerData().power < PlayerDataMgr.powerMax ? 300 : 0
             }
         }
     }

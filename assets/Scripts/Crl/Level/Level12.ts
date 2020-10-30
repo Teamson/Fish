@@ -26,6 +26,8 @@ export default class Level12 extends LevelBase {
     }
 
     async updateCB() {
+        this.WaterSwitch.children[0].active = this.getNeedleCrlById(2).switchState > 0
+
         if (!this.gameStarted) {
             this.canTouch = false
             this.gameStarted = true

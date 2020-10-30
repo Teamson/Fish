@@ -94,6 +94,15 @@ var Utility = /** @class */ (function () {
         var y2 = rPos.y + rNode.height / 2;
         return p1.x >= x1 && p1.x <= x2 && p1.y >= y1 && p1.y <= y2;
     };
+    Utility.rootAction = function (rootNode, active, duration, cb) {
+        if (active)
+            rootNode.active = true;
+        rootNode.scale = active ? 0.1 : 1;
+        var a1 = cc.scaleTo(duration, active ? 1 : 0.1);
+        var a2 = cc.callFunc(function () { cb && cb(); });
+        var a3 = cc.sequence(a1, a2);
+        rootNode.runAction(a3);
+    };
     Utility = __decorate([
         ccclass
     ], Utility);

@@ -58,21 +58,35 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var GuideFinger_1 = require("../GuideFinger");
 var LevelBase_1 = require("./LevelBase");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Level2 = /** @class */ (function (_super) {
     __extends(Level2, _super);
     function Level2() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.guideFinger = null;
+        return _this;
     }
+    Level2.prototype.onEnable = function () {
+        this.guideFinger.stepAction();
+        this.schedule(this.updateCB);
+    };
+    Level2.prototype.updateCB = function () {
+        this.WaterSwitch.children[0].active = this.getNeedleCrlById(1).switchState > 0;
+    };
     Level2.prototype.trigger00 = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.playerCrl.moveToPoint(1)];
+                    case 0:
+                        this.guideFinger.step++;
+                        this.guideFinger.stepAction();
+                        return [4 /*yield*/, this.playerCrl.moveToPoint(1)];
                     case 1:
                         _a.sent();
                         if (!(this.getNeedleCrlById(1).switchState > 0)) return [3 /*break*/, 4];
+                        this.guideFinger.node.active = false;
                         return [4 /*yield*/, this.playerCrl.moveToPoint(2)];
                     case 2:
                         _a.sent();
@@ -93,6 +107,7 @@ var Level2 = /** @class */ (function (_super) {
                 switch (_a.label) {
                     case 0:
                         if (!(this.playerCrl.pointIndex == 1)) return [3 /*break*/, 3];
+                        this.guideFinger.node.active = false;
                         return [4 /*yield*/, this.playerCrl.moveToPoint(2)];
                     case 1:
                         _a.sent();
@@ -127,6 +142,9 @@ var Level2 = /** @class */ (function (_super) {
             });
         });
     };
+    __decorate([
+        property(GuideFinger_1.default)
+    ], Level2.prototype, "guideFinger", void 0);
     Level2 = __decorate([
         ccclass
     ], Level2);

@@ -1,0 +1,14 @@
+{
+  "__type__": "dragonBones.DragonBonesAtlasAsset",
+  "_name": "Fish_tex",
+  "_objFlags": 0,
+  "_native": "",
+  "_atlasJson": "{\"width\":512,\"imagePath\":\"Fish_tex.png\",\"height\":512,\"name\":\"Fish\",\"SubTexture\":[{\"width\":284,\"y\":1,\"height\":246,\"name\":\"gw2_1\",\"x\":1},{\"width\":74,\"y\":1,\"height\":66,\"name\":\"gw2_yj2\",\"x\":287},{\"width\":74,\"y\":69,\"height\":66,\"name\":\"gw2_yj1\",\"x\":287},{\"width\":74,\"y\":137,\"height\":66,\"name\":\"gw2_yj3\",\"x\":287}]}",
+  "_texture": {
+    "__uuid__": "62bd10cd-8d0e-43e2-a9a4-bde13154229a"
+  },
+  "texture": {
+    "__uuid__": "62bd10cd-8d0e-43e2-a9a4-bde13154229a"
+  },
+  "_textureAtlasData": null
+}

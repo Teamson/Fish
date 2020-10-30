@@ -102,12 +102,12 @@
       "metaMtime": 1603762854536
     },
     "bfb33f83-d632-48ae-8209-a8d2b2d19b0b": {
-      "assetMtime": 1603079756000,
-      "metaMtime": 1603762854590
+      "assetMtime": 1603856328416,
+      "metaMtime": 1603856328435
     },
     "82d26426-4d03-482c-a59b-9dac4e613a17": {
-      "assetMtime": 1603079756000,
-      "metaMtime": 1603762854590
+      "assetMtime": 1603856328416,
+      "metaMtime": 1603856328435
     },
     "c02ed8f7-6cc8-4b4f-9f34-686e004feb5b": {
       "assetMtime": 1603079756000,
@@ -165,7 +165,7 @@
             "name": "hdmry_dk",
             "uuid": "53f30716-e617-416e-b366-54fcc59d02df",
             "textureUuid": "d969f88d-e9b6-490c-984f-58dc525a6fb1",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_4.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114050_image_4.png",
             "trim": {
               "x": 3,
               "y": 3,
@@ -189,7 +189,7 @@
             "name": "hdmry_sx",
             "uuid": "5e811a58-925f-4b80-bca5-9165381c5575",
             "textureUuid": "305eb6c1-5f83-42cc-a24e-db84117305dc",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_5.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114050_image_5.png",
             "trim": {
               "x": 3,
               "y": 499,
@@ -212,7 +212,7 @@
             "name": "hdmry_cd",
             "uuid": "9cee3573-3054-4ea5-9463-8b7200118fc3",
             "textureUuid": "9af3a8e0-0bce-457b-9f97-e97e82b47f5d",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_9.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_9.png",
             "trim": {
               "x": 529,
               "y": 499,
@@ -236,7 +236,7 @@
             "name": "hdmry_btn_qd",
             "uuid": "b72c2e6f-9164-47db-b7f6-1ecb4cbce044",
             "textureUuid": "f33a33e5-30a7-4192-a007-f49d7ba1dabd",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_11.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_11.png",
             "trim": {
               "x": 629,
               "y": 499,
@@ -260,7 +260,7 @@
             "name": "hdmry_zt1",
             "uuid": "3fcec375-2294-4a13-ad2c-c560d4b71c84",
             "textureUuid": "f972b57f-6931-4b4c-bc68-cfc732e63237",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_2.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114050_image_2.png",
             "trim": {
               "x": 629,
               "y": 819,
@@ -284,7 +284,7 @@
             "name": "hdmry_zt6",
             "uuid": "a9dfdc05-17e7-4a0e-8bc9-688c36a2e898",
             "textureUuid": "ab6f9eee-90a8-42aa-b53c-7849b3e5c585",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_10.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_10.png",
             "trim": {
               "x": 665,
               "y": 819,
@@ -308,7 +308,7 @@
             "name": "hdmry_yq3",
             "uuid": "6b8a2fd4-3fd5-40e0-a6cd-7a7295ba2ef0",
             "textureUuid": "dd2f3dda-1809-439c-8cce-cc9335c2705b",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_7.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_7.png",
             "trim": {
               "x": 665,
               "y": 935,
@@ -331,7 +331,7 @@
             "name": "hdmry_yq2",
             "uuid": "3cb93b09-ffb2-4c6a-9ba7-cb7628b64fac",
             "textureUuid": "d71b8755-d276-4dcc-9b52-57ccc3a31ecd",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_1.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114050_image_1.png",
             "trim": {
               "x": 665,
               "y": 979,
@@ -354,7 +354,7 @@
             "name": "hdmry_yq1",
             "uuid": "f628dca8-b96e-453d-ab30-bc24245f18e1",
             "textureUuid": "60cad3dc-ee7d-4698-967b-c9bb17ef4fe0",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_15.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_15.png",
             "trim": {
               "x": 701,
               "y": 979,
@@ -377,7 +377,7 @@
             "name": "hdmry_dk1",
             "uuid": "4370c855-457d-436f-b5ae-0e8b8380aa1f",
             "textureUuid": "6bcd4d9b-8207-4bfe-ad05-26c49a759600",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_3.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114050_image_3.png",
             "trim": {
               "x": 645,
               "y": 3,
@@ -401,7 +401,7 @@
             "name": "hdmry_dk2",
             "uuid": "616fb7db-f0cf-42c6-ac29-1d81714fc438",
             "textureUuid": "cc63bc3a-c4b2-4fb4-8144-e29a87e873cf",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925136_image_6.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_6.png",
             "trim": {
               "x": 731,
               "y": 3,
@@ -425,7 +425,7 @@
             "name": "hdmry_dk3",
             "uuid": "867d24e2-7018-4d06-8717-89b17c1b5e11",
             "textureUuid": "269436bb-ae67-405f-81dc-196fdde06216",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_8.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_8.png",
             "trim": {
               "x": 817,
               "y": 3,
@@ -446,10 +446,10 @@
             "rotatedHeight": 414
           },
           {
-            "name": "hdmry_zt5",
-            "uuid": "bfb33f83-d632-48ae-8209-a8d2b2d19b0b",
-            "textureUuid": "82d26426-4d03-482c-a59b-9dac4e613a17",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_12.png",
+            "name": "hdmry_zt4",
+            "uuid": "c02ed8f7-6cc8-4b4f-9f34-686e004feb5b",
+            "textureUuid": "d11b3579-e97f-4d7d-a26e-26116df2f53a",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_13.png",
             "trim": {
               "x": 749,
               "y": 417,
@@ -462,7 +462,7 @@
             "rawHeight": 32,
             "width": 368,
             "height": 37,
-            "originalPath": "E:/cocosPro2d/Fish/library/imports/82/82d26426-4d03-482c-a59b-9dac4e613a17.png",
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/d1/d11b3579-e97f-4d7d-a26e-26116df2f53a.png",
             "x": 746,
             "y": 414,
             "rotated": true,
@@ -470,34 +470,34 @@
             "rotatedHeight": 368
           },
           {
-            "name": "hdmry_zt4",
-            "uuid": "c02ed8f7-6cc8-4b4f-9f34-686e004feb5b",
-            "textureUuid": "d11b3579-e97f-4d7d-a26e-26116df2f53a",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_13.png",
+            "name": "hdmry_zt5",
+            "uuid": "bfb33f83-d632-48ae-8209-a8d2b2d19b0b",
+            "textureUuid": "82d26426-4d03-482c-a59b-9dac4e613a17",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_12.png",
             "trim": {
               "x": 786,
               "y": 417,
-              "width": 362,
+              "width": 361,
               "height": 31,
               "rotatedWidth": 31,
-              "rotatedHeight": 362
+              "rotatedHeight": 361
             },
             "rawWidth": 362,
             "rawHeight": 32,
-            "width": 368,
+            "width": 367,
             "height": 37,
-            "originalPath": "E:/cocosPro2d/Fish/library/imports/d1/d11b3579-e97f-4d7d-a26e-26116df2f53a.png",
+            "originalPath": "E:/cocosPro2d/Fish/library/imports/82/82d26426-4d03-482c-a59b-9dac4e613a17.png",
             "x": 783,
             "y": 414,
             "rotated": true,
             "rotatedWidth": 37,
-            "rotatedHeight": 368
+            "rotatedHeight": 367
           },
           {
             "name": "hdmry_zt3",
             "uuid": "1a68ae49-ba44-41a1-9b8a-2066cf174f16",
             "textureUuid": "a4d9ade4-b724-431d-97b5-b23402fc1dfb",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925135_image_0.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114049_image_0.png",
             "trim": {
               "x": 823,
               "y": 417,
@@ -521,7 +521,7 @@
             "name": "hdmry_zt2",
             "uuid": "e053101f-c81e-4be5-943a-5f0b13f573af",
             "textureUuid": "797ff5e5-85ac-4e03-95da-fbc741fc03be",
-            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603783925137_image_14.png",
+            "path": "E:\\cocosPro2d\\Fish\\temp\\trimImages\\spritesheet_js_1603940114051_image_14.png",
             "trim": {
               "x": 860,
               "y": 417,
